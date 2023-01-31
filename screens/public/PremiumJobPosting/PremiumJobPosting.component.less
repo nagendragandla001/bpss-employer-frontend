@@ -1,0 +1,215 @@
+@import "~rfs/less";
+
+.premium-posting-banner {
+  height: auto !important;
+  background-repeat: no-repeat;
+  background-position: center center !important;
+  background-image: url("/images/static-pages/premium-posting/banner-premium-posting.svg");
+  background-size: cover;
+  .padding-top(80px);
+  .padding-bottom(190px);
+
+  & .premium-main-title {
+    color: @yellow-10;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .font-size(24px);
+    .rfs(32px, line-height);
+  }
+
+  & .premium-title {
+    .padding-top(24px);
+    .rfs(80px, line-height);
+    .font-size(64px important);
+    font-weight: 700;
+  }
+
+  & .premium-sub-title {
+    .padding-top(4px);
+    .font-size(20px);
+    .rfs(28px, line-height);
+    font-weight: 400;
+    color: @blue-grey-5;
+  }
+
+  & .landing-top-btn {
+    background-color: @temp-base-color;
+    border-color: @temp-base-color;
+    height: auto;
+    border-radius: 4px;
+    .margin-top(28px);
+    .padding-top(12px);
+    .padding-bottom(12px);
+    .padding-left(32px);
+    .padding-right(32px);
+    .font-size(18px);
+  }
+}
+
+.free-unlocks-banner{
+  height: 533px;
+  background-repeat: no-repeat;
+  background-position: center center !important;
+  background-image: url("/images/static-pages/premium-posting/banner-free-unlock.svg");
+  background-size: cover;
+  .padding-top(175px);
+
+  @media (max-width: @screen-sm-max) {
+    height: 600px;
+    .padding-top(375px);
+    .padding-bottom(50px);
+  }
+
+  & .free-unlocks-title{
+    .font-size(28px)
+  }
+  & .landing-top-btn {
+    background-color: @temp-base-color;
+    border-color: @temp-base-color;
+    height: auto;
+    border-radius: 4px;
+    .margin-top(28px);
+    .padding-top(10px);
+    .padding-bottom(10px);
+    .padding-left(32px);
+    .padding-right(32px);
+    .font-size(14px);
+  }
+}
+
+.premium-features {
+  .margin-top(80px);
+  .margin-bottom(130px);
+  & .premium-features-section {
+    .padding-top(32px);
+    .padding-right(44px);
+    .padding-bottom(40px);
+    .padding-left(44px);
+    & .premium-features-img {
+      .margin-bottom(33px);
+    }
+    & .premium-features-title {
+      .font-size(28px);
+      .rfs(32px, line-height);
+      display: block;
+      .padding-bottom(12px) !important;
+      font-weight: 700;
+    }
+    & .premium-features-subtitle {
+      .font-size(16px);
+      .rfs(24px, line-height);
+      color: @blue-grey-5;
+    }
+  }
+}
+
+.job-posting-pricing {
+  .padding-top(100px);
+  .padding-bottom(160px);
+
+  & .pricing-subtitle {
+    .margin-top(16px) !important;
+    .margin-bottom(60px) !important;
+  }
+
+  & .pricing-title {
+    color: @charcoal-6;
+  }
+
+  & .pricing-section {
+    display: flex;
+  }
+
+  & .pricing-block {
+    border-radius: 4px;
+    border: 1px solid @charcoal-3;
+    width: 100%;
+    & .pricing-main {
+      .padding-top(63px);
+      .padding-bottom(30px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      & .pricing-total {
+        .margin-bottom(25px) !important;
+      }
+    }
+
+    &.popular {
+      border: 1px solid @yellow-2;
+      position: relative;
+      .padding(0px);
+
+      & .pricing-popular-tag {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 8px;
+        color: #cc8d27;
+        background-color: #ffe4b9;
+        font-weight: 600;
+        .font-size(14px);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        .rfs(20px, line-height);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        & img {
+          width: 65px;
+          height: auto;
+        }
+      }
+
+      & .pricing-post-job-btn {
+        background-color: @yellow-7 !important;
+        border-color: @yellow-7;
+        color: #fff;
+      }
+    }
+  }
+
+  & .pricing-value {
+    .rfs(28px, line-height);
+  }
+
+  & .pricing-discount-block {
+    .margin-bottom(30px) !important;
+    & .pricing-discount {
+      color: @error-color;
+      .font-size(10px);
+      font-weight: 700;
+      background-color: #ffd5cd;
+      .padding-left(3px);
+      .padding-right(3px);
+      .rfs(13px, line-height);
+      border-radius: 4px;
+    }
+  }
+
+  & .pricing-job-postings {
+    .margin-top(0) !important;
+    .font-size(20px);
+    font-weight: 600;
+    .rfs(28px, line-height);
+    .margin-bottom(12px) !important;
+  }
+
+  & .pricing-post-job-btn {
+    .padding-left(16px);
+    .padding-right(16px);
+    .margin-bottom(0);
+    .margin-top(35px);
+    height: 40px;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+
+  & .pricing-contact-block {
+    .margin-top(72px) !important;
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <path id="prefix__a" d="M14.013 0L14.013 1 6.006 1 6.006 0 4.004 0 4.004 1 1.001 1 0 2 0 19 1.001 20 18.999 20 20 19 20 2 18.999 1 16.015 1 16.015 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0H40V40H0z"/>
+        <g transform="translate(6 8)">
+            <mask id="prefix__b" fill="#fff">
+                <use xlink:href="#prefix__a"/>
+            </mask>
+            <path stroke="#2C7B78" stroke-width="2" d="M5.004 1v1H1.415L1 2.413v16.171l.415.415h17.17l.415-.415V2.415L18.585 2h-3.57V1h-.002v1H5.006V1h-.002z"/>
+            <path fill="#153E42" d="M2 0H18V5H2z" mask="url(#prefix__b)"/>
+            <path fill="#2C7B78" d="M16.015 3.999L16.015 1 19.998 1 19.998 6 0.002 6 0.002 1 4.004 1 4.004 3.999 5.005 5 6.005 3.999 6.006 1 14.013 1 14.013 3.999 15.014 5z" mask="url(#prefix__b)"/>
+            <g fill-rule="nonzero">
+                <path fill="#FFCE32" d="M1 12.818L15 12.818 15.509 11.979 8.5 0 7.42 0.002 0.418 12.096z" transform="translate(12 11)"/>
+                <path fill="#FFF6D9" d="M8.727 10.636L7.273 10.636 7.273 9.182 8.727 9.182zM8.727 7.727L7.273 7.727 7.273 4.818 8.727 4.818z" transform="translate(12 11)"/>
+            </g>
+        </g>
+    </g>
+</svg>

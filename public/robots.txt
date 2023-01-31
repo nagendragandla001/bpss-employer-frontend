@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Allow: /*?utm
+Disallow: /password/
+Disallow: /verify/
+Disallow: /employer-zone/
+Disallow: /*?*
+
+Sitemap: https://employer.myrocket.co/sitemap.xml

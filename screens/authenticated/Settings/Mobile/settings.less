@@ -1,0 +1,116 @@
+.m-settings-page-container {
+  & .settings-wrapper {
+    & .label-header {
+      color: #696f7c;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    & .main-header-label {
+      padding-left: 1em;
+    }
+    & .edit-details {
+      padding-right: 1em !important;
+    }
+
+    & .setting-container {
+      box-shadow: 0px 2px 10px rgba(5, 15, 36, 0.1);
+      border-radius: 8px;
+      background: #ffffff;
+
+      & .user-name-banner {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      & .user-name-wrapper {
+        position: absolute;
+        left: 1em;
+        bottom: 1em;
+
+        & .user-name {
+          color: #ffffff;
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+      }
+
+      & .field-label {
+        color: #696f7c;
+        font-weight: bold;
+        font-size: 12px;
+      }
+
+      & .field-value {
+        color: #696f7c;
+        font-size: 14px;
+      }
+    }
+
+    & .alert {
+      color: #696f7c;
+    }
+
+    & .user-settings-divider {
+      background: #b4b7bd;
+      margin: 16px 0 0 0;
+    }
+
+    & .manager-name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    & .remove-btn {
+      color: #696f7c;
+    }
+
+    & .verification-status {
+      & .status {
+        &.P {
+          color: #ff8718;
+        }
+
+        &.V {
+          color: #abd354;
+        }
+
+        &.F {
+          color: #ff3934;
+        }
+      }
+    }
+  }
+  & .verification-alert {
+    border-radius: 4px;
+
+    & .ant-alert-message {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+.settings-drawer {
+  & .ant-drawer-header {
+    border: none;
+    padding: 0;
+    align-items: center;
+
+    & .ant-drawer-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    & .ant-drawer-close {
+      padding: 1rem 1.2rem !important;
+    }
+  }
+
+  & .ant-drawer-body {
+    padding: 24px !important;
+    overflow-y: scroll;
+  }
+  & .ant-drawer-footer {
+    border: none;
+  }
+}

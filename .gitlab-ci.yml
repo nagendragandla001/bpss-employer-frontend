@@ -1,0 +1,15 @@
+# This file is a template, and might need editing before it works on your project.
+include:
+  template: Jobs/Code-Quality.gitlab-ci.yml
+# stages:
+# - build
+
+# build_mobile_web:
+#   stage: build
+#   timeout: 2 hour
+#   image: node:14.7.0
+
+#   script:
+#     - npm install
+#     - source stage1.env
+#     - ./node_modules/.bin/next build

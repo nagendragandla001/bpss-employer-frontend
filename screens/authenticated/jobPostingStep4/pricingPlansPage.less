@@ -1,0 +1,132 @@
+.pricing-plans-page {
+  margin-bottom: 5rem;
+  & .title {
+    // font-size: 20px;
+    margin: 1.5rem 0;
+  }
+  & .free-pricing-plan {
+    width: 100%;
+    height: 30%;
+    box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+    border-radius: 4px;
+    border: solid 1px @charcoal-3;
+    margin-bottom: 1.5rem;
+    & .plan-title {
+      padding: 0.75rem;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid @charcoal-3;
+    }
+    & .plan-details {
+      padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+    & .continue-btn {
+      width: 100%;
+      border: solid 1px @charcoal-8;
+      border-radius: 4px;
+      background-color: #ffffff;
+      height: 32px;
+      padding: 0;
+      margin-top: 1.5rem;
+    }
+  }
+  // need to be refactored
+  & .upgrade-pricing-plan {
+    width: 100%;
+    border: solid 1px @yellow-3;
+    box-shadow: none;
+    margin-bottom: 3.5rem;
+    & .plan-title {
+      padding: 0.75rem;
+      border-bottom: 1px solid @yellow-3;
+      display: flex;
+      justify-content: center;
+      background-color: @yellow-1;
+    }
+    & .plan-details {
+      padding: 1rem 1.5rem 1.5rem 1.5rem;
+      background-color: @yellow-1;
+    }
+    & .premium-plan {
+      padding: 1rem 1rem 1rem 1.5rem;
+      & .savings-tag {
+        background-color: rgba(255, 213, 205, 0.24);
+        border-radius: 4px;
+        padding: 0px 2px;
+        span {
+          color: @red-7;
+        }
+        font-size: 10px;
+      }
+      & .buy-btn {
+        height: 32px;
+        padding: 6px 14px;
+        border: none;
+        border-radius: 4px;
+        margin-left: 1rem;
+        margin-top: 8px;
+      }
+      & .plan-cost {
+        margin-top: 2rem;
+      }
+      @media screen and(min-width: @screen-xl-min) {
+        & .plan-cost {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  @media screen and(min-width: @screen-xl-min) {
+    & .free-pricing-plan,
+    & .upgrade-pricing-plan {
+      max-width: 588px;
+    }
+    & .plan-cost {
+      margin-top: 0;
+    }
+  }
+  & .font-size-24 {
+    font-size: 24px;
+  }
+  & .color-cyan-10 {
+    color: @blue-10;
+  }
+  & .color-charcoal-6 {
+    color: @charcoal-6;
+  }
+  & .color-yellow-10 {
+    color: @yellow-10;
+  }
+  & .color-yellow-9 {
+    color: @yellow-9;
+  }
+  & .padding-bottom-8 {
+    padding-bottom: 0.5rem;
+  }
+  & .padding-bottom-16 {
+    padding-bottom: 1rem;
+  }
+  & .padding-bottom-32 {
+    padding-bottom: 2rem;
+  }
+  & .padding-right-4 {
+    padding-right: 4px;
+  }
+  & .padding-right-8 {
+    padding-right: 0.5rem;
+  }
+  & .padding-right-24 {
+    padding-right: 1.5rem;
+  }
+  & .b-bottom-charcoal-2 {
+    border-bottom: 1px solid @charcoal-2;
+  }
+  & .flex-align-center {
+    display: flex;
+    align-items: center;
+  }
+  & .display-justify-flex-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

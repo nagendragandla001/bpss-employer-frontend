@@ -1,0 +1,40 @@
+@import "~rfs/less";
+
+.static-faq {
+  & .search-input {
+    .padding-top(50px);
+    & .ant-input-affix-wrapper {
+      padding-left: 16px;
+      border-radius: 4px;
+      background-color: @charcoal-1;
+      & .ant-input-prefix {
+        margin-right: 15px;
+      }
+      & input {
+        background-color: @charcoal-1;
+      }
+    }
+  }
+
+  .faq-panel {
+    .padding-top(40px);
+    .padding-bottom(100px);
+    & .ant-collapse-item {
+      border-bottom: 1px solid @charcoal-2;
+      & .ant-collapse-header {
+        padding-left: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        .font-size(16px);
+        .rfs(24px, line-height);
+        & .anticon {
+          color: @blue-grey-5;
+          top: 22px;
+        }
+      }
+      & .ant-collapse-content {
+        color: @blue-grey-5;
+      }
+    }
+  }
+}

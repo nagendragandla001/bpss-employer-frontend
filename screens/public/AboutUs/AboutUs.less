@@ -1,0 +1,19 @@
+@import "~rfs/less";
+
+.about {
+  .margin-top(60px);
+  .margin-bottom(100px);
+  & .main-title {
+    .font-size(48px);
+    .rfs("64px", line-height);
+    .padding-bottom(40px);
+    text-align: center;
+    text-transform: capitalize;
+  }
+  & .main-content {
+    .font-size(20px);
+    .rfs("28px", line-height);
+    color: @blue-grey-8;
+    .padding-bottom(20px);
+  }
+}

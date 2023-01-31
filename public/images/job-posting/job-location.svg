@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <path id="h08d3e82xa" d="M12.763 0C5.714 0 0 5.714 0 12.763c-.074 12.176 12.763 27.279 12.763 27.279S25.6 24.939 25.526 12.762C25.526 5.715 19.81 0 12.763 0zm0 18.178c-2.99 0-5.415-2.425-5.415-5.415 0-2.991 2.424-5.415 5.415-5.415 2.99 0 5.415 2.424 5.415 5.415 0 1.436-.57 2.814-1.585 3.83-1.016 1.015-2.394 1.585-3.83 1.585z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <path d="M0 0H64V64H0z" transform="translate(-477 -1039) translate(477 1039)"/>
+                <g>
+                    <path fill="#DDD" fill-rule="nonzero" d="M42.048 32.432H29.516c-1.68 2.656-3.521 5.206-5.516 7.634-1.995-2.428-3.837-4.978-5.516-7.634H5.952L.023 47.977h47.954l-5.93-15.545z" transform="translate(-477 -1039) translate(477 1039) translate(8 8)"/>
+                    <path fill="#001443" fill-rule="nonzero" stroke="#FFF" stroke-width="2" d="M43.424 36.035L19.495 44.546 10.169 32.432 42.049 32.432z" transform="translate(-477 -1039) translate(477 1039) translate(8 8)"/>
+                    <path fill="#596685" fill-rule="nonzero" stroke="#FFF" stroke-width="2" d="M9.854 47.977L33.54 39.551 40.025 47.977z" transform="translate(-477 -1039) translate(477 1039) translate(8 8)"/>
+                    <g transform="translate(-477 -1039) translate(477 1039) translate(8 8) translate(11.237 .025)">
+                        <mask id="6dbf0p6efb" fill="#fff">
+                            <use xlink:href="#h08d3e82xa"/>
+                        </mask>
+                        <use fill="#BE273D" fill-rule="nonzero" xlink:href="#h08d3e82xa"/>
+                        <path fill="#D83C3C" fill-rule="nonzero" d="M10.763-1C3.714-1-2 4.714-2 11.763c-.074 12.176 12.763 27.279 12.763 27.279S23.6 23.939 23.526 11.762C23.526 4.715 17.81-1 10.763-1zm0 18.178c-2.99 0-5.415-2.425-5.415-5.415 0-2.991 2.424-5.415 5.415-5.415 2.99 0 5.415 2.424 5.415 5.415 0 1.436-.57 2.814-1.585 3.83-1.016 1.015-2.394 1.585-3.83 1.585z" mask="url(#6dbf0p6efb)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

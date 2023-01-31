@@ -1,0 +1,387 @@
+@interview-location-carousel-height: 152px;
+@interview-poc-carousel-height: 72px;
+
+.add-slots-drawer {
+  & .ant-drawer-header {
+    padding: 1rem;
+    & .ant-drawer-title {
+      padding: 0;
+      font-size: 14px;
+      font-weight: bold;
+      color: @blue-grey-6;
+    }
+  }
+  & .ant-drawer-body {
+    padding: 1.5rem !important;
+    display: flex;
+    flex-direction: column;
+    & .interview-dates-checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+      & .checkbox {
+        min-height: 80px;
+        min-width: 80px;
+        border-radius: 4px;
+        // box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+        border: solid 1px @charcoal-3;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 0.5rem 0.5rem 0;
+        & .interview-date {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          & .date {
+            color: @blue-grey-8;
+          }
+          & .day,
+          & .month {
+            color: @blue-grey-6;
+          }
+        }
+        & .ant-checkbox {
+          & .ant-checkbox-inner {
+            border-radius: 2.7px;
+            border: solid 1.5px @charcoal-3;
+            top: -22px;
+            left: -4px;
+          }
+        }
+        &.ant-checkbox-wrapper-checked {
+          // background-color: @blue-1;
+          border: 1px solid @temp-base-color;
+          box-shadow: none;
+          & .interview-date {
+            & .date,
+            & .day,
+            & .month {
+              color: @blue-grey-10;
+            }
+          }
+        }
+        & .ant-checkbox-checked {
+          & .ant-checkbox-inner {
+            background-color: @blue-7;
+            border-radius: 2.7px;
+            border: 1px solid white;
+          }
+          & .ant-checkbox-inner::after {
+            border: 2px solid white;
+            border-top: 0;
+            border-left: 0;
+          }
+        }
+      }
+    }
+    & .input-with-prefix {
+      border: none;
+      border-bottom: solid 2px @charcoal-8;
+      border-radius: 4px;
+      box-shadow: none;
+      padding: 0;
+      height: 48px;
+      & input {
+        background-color: @charcoal-2;
+        border: none !important;
+        padding-left: 1rem;
+      }
+      .ant-input-prefix {
+        width: 48px;
+        justify-content: center;
+        background-color: @charcoal-3;
+        margin-right: 0;
+      }
+    }
+    & .available-timings-container {
+      max-width: 362px;
+    }
+    & .interview-duration-container {
+      max-width: 180px;
+    }
+    & .add-slots-drawer-carousel {
+      // width: auto;
+      // max-width: 592px;
+      & .slick-slider {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      & .slick-list {
+        height: 120px;
+        padding: 0px 20px !important;
+      }
+      & .slick-track {
+        height: 100%;
+      }
+      & .ant-btn-lg {
+        padding: 0;
+        height: 100%;
+      }
+    }
+    & .interview-locations-carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & .carousel-arrows {
+        height: @interview-location-carousel-height !important;
+      }
+      & .slick-list {
+        height: @interview-location-carousel-height !important;
+        padding: 0 !important;
+      }
+      & .carousel-checkbox {
+        height: 144px;
+        position: relative;
+        &.ant-checkbox-wrapper {
+          & span:nth-child(1) {
+            position: absolute;
+          }
+          & span:nth-child(2) {
+            height: 100%;
+            display: flex;
+          }
+          & .checkbox-content {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            height: 100%;
+            margin: 0;
+            max-width: 214px;
+            width: 214px;
+            padding: 12px 12px 16px 0;
+            & .interview-address {
+              max-height: 52px;
+              overflow: hidden;
+              word-break: break-word;
+            }
+            & .map-img {
+              height: 48px;
+              width: 48px;
+            }
+          }
+        }
+      }
+      & .silck-slide {
+        width: 207px !important;
+        height: @interview-location-carousel-height;
+        border: 1px solid #ccc;
+        &.slick-active {
+          border: none;
+        }
+      }
+      & .slick-dots {
+        display: none !important;
+      }
+    }
+    & .interview-poc-carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & .carousel-arrows {
+        height: @interview-poc-carousel-height !important;
+      }
+      & .slick-list {
+        height: @interview-poc-carousel-height !important;
+        padding: 0 !important;
+      }
+      & .carousel-checkbox {
+        height: 64px;
+        &.ant-checkbox-wrapper {
+          &.ant-radio-button-wrapper-checked {
+            border: solid 1px @blue-7;
+            background-color: @blue-1;
+          }
+        }
+      }
+      & .silck-slide {
+        width: 207px !important;
+        height: @interview-poc-carousel-height;
+        border: 1px solid @charcoal-8;
+        &.slick-active {
+          border: none;
+        }
+      }
+      & .slick-dots {
+        display: none !important;
+      }
+    }
+    & .d-interviewers-wrapper {
+      background-color: #fff6d9;
+      border-radius: 4px;
+      padding: 1rem;
+      margin-bottom: 3.5rem;
+      & .label {
+        font-size: 20px;
+        color: @charcoal-10;
+        font-weight: bold;
+      }
+      & .select-box {
+        & .ant-select-selector {
+          background-color: #ffffff !important;
+          & .ant-select-selection-item {
+            border: 1px solid @charcoal-10;
+          }
+        }
+        & .ant-select-selection-search {
+          input:first-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+    & .interview-poc-carousel {
+      & .ant-form-item-control-input-content {
+        max-height: 72px;
+      }
+    }
+    & .add-another-btn {
+      padding: 0;
+      position: absolute;
+      top: 0;
+      right: 36px;
+      height: auto;
+    }
+    & .cyan-checkbox {
+      & .ant-checkbox-checked {
+        & .ant-checkbox-inner {
+          background-color: @blue-7;
+          border: none;
+        }
+      }
+    }
+    & .share-poc-checkbox {
+      & .ant-checkbox-disabled {
+        & .ant-checkbox-inner {
+          background: @blue-3;
+        }
+      }
+    }
+    & .submit-btn {
+      width: 100%;
+      border-radius: 4px;
+      height: 40px;
+      padding: 0;
+      margin-bottom: 3rem;
+    }
+    & .divider-addSlots {
+      width: 2px !important;
+      background-color: @charcoal-3;
+      display: flex;
+      margin: 0px 1.5rem !important;
+      height: 76px;
+    }
+  }
+  & .font-size-20 {
+    font-size: 20px;
+  }
+  & .font-bold {
+    font-weight: bold;
+  }
+  & .text-upper-case {
+    text-transform: uppercase;
+  }
+  & .p-bottom-24 {
+    padding-bottom: 1.5rem;
+  }
+  & .p-bottom-8 {
+    padding-bottom: 0.5rem;
+  }
+  & .p-top-8 {
+    padding-top: 0.5rem;
+  }
+  & .p-y-axis-32 {
+    padding: 2rem 0;
+  }
+  & .color-charcoal-8 {
+    color: @charcoal-8;
+  }
+  & .flex-align-center {
+    display: flex;
+    align-items: center;
+  }
+  & .flex-justify-end {
+    justify-content: flex-end;
+  }
+  & .carousel-checkbox {
+    min-width: 240px !important;
+    max-width: 240px !important;
+    margin-right: 16px;
+    border-radius: 4px;
+    display: flex;
+    // box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+    &.ant-checkbox-wrapper {
+      border: 1px solid @charcoal-3;
+      // box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+      & .ant-checkbox {
+        top: 16px;
+        left: 16px;
+      }
+      & .checkbox-content {
+        max-width: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 0 10px 22px;
+      }
+      & .ant-checkbox-inner {
+        border: 1px solid @charcoal-8;
+        width: 16px !important;
+        height: 16px !important;
+        border-radius: 8px;
+        &::after {
+          border-radius: 8px;
+          background: #fff;
+          width: 6px;
+          height: 6px;
+          top: 8px;
+          left: 4px;
+        }
+      }
+    }
+
+    &.ant-checkbox-wrapper-checked {
+      border: 1px solid @temp-base-color;
+      // background-color: @blue-1;
+      box-shadow: none;
+      & .ant-checkbox-inner {
+        border: 1px solid @blue-5;
+        background-color: @blue-5;
+        &::after {
+          border-radius: 8px;
+          background: #fff;
+          width: 6px;
+          height: 6px;
+          top: 8px;
+          left: 4px;
+        }
+      }
+    }
+    & .ant-checkbox-checked::after {
+      border: none !important;
+    }
+  }
+  & .carousel-arrows {
+    background: none;
+    border: none;
+    background-image: linear-gradient(
+      to left,
+      #fff 49%,
+      rgba(255, 255, 255, 0)
+    );
+    border-radius: 0;
+    position: absolute;
+    box-shadow: none;
+    width: 45px;
+    right: 0;
+    span {
+      padding-bottom: 8px;
+    }
+    &:nth-child(1) {
+      left: 0;
+      display: none;
+    }
+  }
+}

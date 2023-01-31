@@ -1,0 +1,168 @@
+.active-plans-page {
+  margin-bottom: 112px;
+  //   & .page-title {
+  //     font-size: 20px;
+  //     font-weight: bold;
+  //   }
+  & .upgrade-plan-card {
+    border-radius: 4px;
+    border: solid 1px @yellow-3;
+    background-color: @yellow-1;
+    max-width: 556px;
+    width: 100%;
+    min-height: 198px;
+    margin: 0px auto;
+    // height: 80%;
+    & .upgrade-card {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      min-height: 90px;
+      & .upgrade-btn {
+        height: 32px;
+        border-radius: 4px;
+        background-color: @yellow-9;
+        border: none;
+        padding: 0.25rem 1rem 0.25rem 0.5rem;
+        margin-top: 52px;
+      }
+      @media (min-width: 576px) {
+        & .upgrade-btn {
+          margin-top: 0;
+        }
+      }
+    }
+    & .upgrade-banner {
+      padding: 1rem 1.5rem;
+    }
+  }
+  & .free-plan-card {
+    border-radius: 4px;
+    border: solid 1px @charcoal-3;
+    box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+    max-width: 556px;
+    width: 100%;
+    min-height: 92px;
+    margin: 0px auto;
+    & .free-card {
+      padding: 1.5rem;
+      & .continue-btn {
+        width: 122px;
+        height: 32px;
+        border-radius: 4px;
+        border: solid 1px @charcoal-8;
+        background-color: #ffffff;
+        color: @charcoal-10;
+        padding: 0;
+        margin-top: 3.25rem;
+        margin-bottom: 0.875rem;
+      }
+      @media (min-width: 576px) {
+        & .continue-btn {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  & .display-justify-flex-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  & .font-bold {
+    font-weight: bold;
+  }
+  & .color-charcoal-6 {
+    color: @charcoal-6;
+  }
+  & .color-yellow-10 {
+    color: @yellow-10;
+  }
+  & .color-yellow-9 {
+    color: @yellow-9;
+  }
+  & .padding-right-4 {
+    padding-right: 4px;
+  }
+  & .padding-right-24 {
+    padding-right: 1.5rem;
+  }
+  & .m-y-axix-2rem {
+    margin: 2rem auto;
+  }
+  & .padding-bottom-8 {
+    padding-bottom: 8px;
+  }
+  & .flex-align-center {
+    display: flex;
+    align-items: center;
+  }
+
+  & .page-title {
+    padding-bottom: 22px;
+  }
+
+  & .plan-info {
+    border-radius: 4px;
+    border: 1px solid @blue-grey-2;
+    margin-bottom: 15px;
+    & .title {
+      height: 64px;
+      background-image: url("/images/pricing-plan/fj-banner.svg");
+      background-repeat: no-repeat;
+      background-position: left right !important;
+      // background: #12003e;
+      // border-color: #12003e;
+      border-radius: 4px;
+      color: #ffffff;
+      padding: 12px;
+      & .feature-job-icon {
+        // height: 20px;
+        // width: 11px;
+        padding-right: 6px;
+      }
+    }
+    & .plan-details {
+      padding: 12px;
+      & .description {
+        color: @blue-grey-7;
+        font-size: 12px;
+      }
+      & .feature-job-btn {
+        border-radius: 4px;
+        span {
+          padding-left: 6px;
+        }
+      }
+
+      & .free-job-btn {
+        color: @blue-grey-7;
+      }
+      & .active-plan-actions {
+        margin-top: 24px;
+      }
+    }
+    & .plan-validity {
+      bottom: 16px;
+      position: absolute;
+      right: 12px;
+      font-size: 10px;
+      color: @blue-grey-7;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm-max) {
+  .active-plans-page {
+    .title-container {
+      margin-top: 54px;
+    }
+    .active-plan-actions {
+      margin-top: 75px !important;
+      text-align: center;
+    }
+    .page-title {
+      padding-bottom: 12px !important;
+    }
+  }
+}

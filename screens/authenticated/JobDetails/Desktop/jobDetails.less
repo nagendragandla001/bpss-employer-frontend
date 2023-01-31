@@ -1,0 +1,524 @@
+.jd-header-row {
+  // height: 190px;
+  border-radius: 4px;
+  height: 260px;
+
+  & .jd-header-card {
+    width: 800px;
+    height: 195px;
+    border: none;
+    background: transparent;
+
+    .ant-card-body {
+      padding-left: 0.6rem;
+      &:hover {
+        .hide {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.jd-main-layout {
+  width: 70%;
+  max-width: 750px;
+}
+.jd-premium-banner {
+  background-color: rgba(255, 249, 230, 0.6);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 196, 1, 0.2);
+  padding: 0.25rem 0.5rem;
+  &.ant-typography{
+    color: #F2BA01;
+  }
+}
+.jd-active-banner {
+  color: @red-9;
+  font-weight: bold;
+}
+.jd-skeleton-header-row {
+  height: 200px;
+
+  // margin-left: 8rem;
+  border-radius: 4px;
+
+  .jd-header-card {
+    width: 800px;
+    height: 195px;
+    border: none;
+    background: transparent;
+    .ant-card-body {
+      padding-left: 1rem;
+      &:hover {
+        .hide {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.jd-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.jd-detail-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.jd-company {
+  font-size: 16px;
+  color: @blue-7;
+  font-weight: bold;
+}
+.jd-desc {
+  .ant-typography-expand {
+    color: @blue-7;
+  }
+}
+.jd-row {
+  margin-bottom: 15px;
+}
+.jd-side-card {
+  width: 350px;
+  height: 260px;
+  margin-top: 2rem;
+}
+.jd-details-card {
+  width: 790px;
+  border: none;
+
+  .ant-card-body {
+    padding-top: 0px;
+    padding-left: 6px;
+    &:hover {
+      .hide {
+        display: flex;
+      }
+    }
+  }
+}
+.hide {
+  display: none;
+  height: 0px;
+}
+.jd-desktop-grayscale {
+  filter: grayscale();
+}
+.jd-desktop-preview {
+  border-radius: 4px;
+  border: solid 1px rgba(0, 40, 83, 0.25);
+  background-color: @temp-base-color;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+
+  &:hover {
+    background-color: @temp-base-color;
+    color: white;
+  }
+  &:focus {
+    background-color: @temp-base-color;
+    color: white;
+  }
+}
+.jd-desktop-preview-application {
+  border-radius: 4px;
+  border: solid 1px rgba(0, 40, 83, 0.25);
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  color: @temp-base-color;
+  margin-left: 0.3rem;
+  .hover {
+    text-decoration: none !important;
+  }
+}
+.jd-desktop-padding {
+  padding-right: 1rem !important;
+}
+.jobDetails-lang-btn {
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: @blue-1 !important;
+  color: @blue-8 !important;
+  border: none;
+  // .ant-btn {
+  //   margin-left: 10px !important;
+  // }
+}
+.m-jd-lang-btn {
+  background-color: @blue-1;
+}
+.jobdetails-row-width {
+  width: 350px;
+}
+.jobdetails-col-width {
+  width: 160px;
+}
+.jobdetails-m-row-width {
+  width: 350px;
+}
+.jobdetails-m-col-width {
+  width: 145px;
+}
+.jobdetails-mandatory-edit-modal {
+  right: -118px;
+}
+.jobdetails-m-mandatory-edit-modal {
+  right: -7px;
+}
+.m-jobdetails-submit-btn {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 20px;
+  z-index: 10;
+}
+.m-jobDetails-callhr {
+  width: 320px;
+}
+.jd-font-12 {
+  font-size: 12px;
+}
+.jd-side-layout-card {
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 0px rgba(91, 120, 124, 0.16);
+  border-radius: 4px;
+  & .ant-card-head-title, .ant-card-extra {
+    padding: 0px;
+  }
+  & .ant-card-body {
+    padding: 10px;
+    &:hover {
+      .hide {
+        display: block;
+      }
+    }
+  }
+  & .sub-title {
+    color: @charcoal-6;
+  }
+}
+.jd-completion-card {
+  //width: 380px;
+  .ant-card-body {
+    padding: 20px;
+    &:hover {
+      .hide {
+        display: block;
+      }
+    }
+  }
+}
+
+.jd-call-hr {
+  //width: 380px;
+  .ant-card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &:hover {
+      .hide {
+        display: block;
+      }
+    }
+  }
+}
+.jd-side-layout-card-clr {
+  background-color: @yellow-1;
+}
+
+.jd-upgrade-text {
+  font-size: 12px;
+  color: @yellow-9;
+  padding-left: 0.2rem;
+}
+.jd-upgrade-btn {
+  width: 300px;
+  border-radius: 4px;
+  background-color: #361d87;
+  color: white;
+  margin-top: 0.5rem;
+}
+.jd-bold-layout {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.jd-profile-progress {
+  margin-top: 0.3rem;
+  .ant-progress-inner {
+    // width: 314px;
+    height: 4px;
+    background-color: #d8d8d8;
+  }
+  .ant-progress-bg {
+    background-color: @blue-7 !important;
+    // width: 26px !important;
+  }
+  .ant-progress-text {
+    //transform: translate(-320%, -0%) !important;
+    color: black;
+  }
+}
+.jd-background {
+  background-color: #fafbfb;
+  border-radius: 4px;
+  border: solid 1px #f2f4f5;
+}
+.jd-coordinator {
+  border: none;
+  background: none;
+  .ant-card-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.jd-subheading {
+  font-size: 14px;
+  color: @charcoal-6;
+  padding-left: 4px;
+}
+.jd-total-app {
+  border-radius: 10px;
+  background-color: @charcoal-2;
+  padding: 0 7px;
+}
+
+.jd-subheading-img {
+  padding-left: 0.5rem;
+}
+.divider-clr {
+  color: @charcoal-6;
+  margin: 18px;
+  width: 100%;
+}
+.jd-red-banner {
+  background-color: rgba(255, 213, 205, 0.4);
+  height: 46px;
+  z-index: 1px;
+}
+.jd-callhr-btn {
+  background-color: @blue-7;
+  color: white;
+  border: none;
+}
+.jd-text-clr {
+  color: @charcoal-10;
+}
+.jd-round-btn {
+  border: solid 1px #d8dfe0;
+  background-color: #ffffff;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+  margin-top: 0.4rem;
+}
+.jd-completion-score {
+  color: @blue-7;
+  font-size: 16px;
+  font-weight: bold;
+}
+.jd-red {
+  color: @red-8;
+}
+.jd-yellow {
+  background-color: rgba(255, 237, 178, 0.4);
+  height: 46px;
+  z-index: 1px;
+}
+.jd-edit-cancel {
+  display: none;
+}
+.jd-open {
+  background-color: #f9f9fa;
+}
+.jd-close {
+  background-color: @charcoal-2;
+}
+.jd-spinner {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  background-size: 100%;
+}
+.jd-slots-btn {
+  border: solid 0.2px #f0f0f0;
+  border-top: none;
+  height: 75px;
+  // width: 380px;
+}
+.jd-city {
+  margin-left: -1rem;
+  margin-top: -0.5rem;
+}
+.jd-dropdown {
+  min-width: 100px;
+  border-radius: 4px;
+  box-shadow: 1px 4px 4px 0 rgba(0, 0, 0, 0.16);
+  padding: 0.5rem 0;
+  & li {
+    width: 100%;
+    a {
+      padding: 0.5rem 1rem;
+    }
+    font-size: 14px;
+  }
+}
+.jd-dropdown-state {
+  .ant-dropdown {
+    min-width: 80px !important;
+  }
+  min-width: 100px;
+}
+.jd-tag {
+  width: 14px;
+  padding: 0px !important;
+  max-height: 20px;
+}
+
+.ct-edit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 0;
+  font-weight: normal;
+  color: @text-color;
+}
+
+.jd-verify-number-text {
+  font-size: 11px;
+  font-weight: 500;
+  color: @charcoal-10;
+  text-decoration: underline;
+}
+.jd-read-btn {
+  padding: 0 !important;
+  height: auto !important;
+  color: @blue-7;
+  font-weight: bold;
+}
+.jd-details-interview-btn {
+  background: 0;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: @temp-base-color;
+  text-decoration: underline;
+}
+.jd-margin {
+  margin-left: -3px;
+}
+.jd-require-text {
+  max-width: 200px;
+  word-break: break-all;
+}
+.jd-interview-border {
+  border: none;
+}
+.jd-img-pad {
+  padding-left: 2px;
+}
+.jd-empty-input {
+  width: 230px;
+  height: 20px;
+}
+.jd-display-flex {
+  display: flex;
+}
+.jd-card-txt-clr {
+  color: @blue-grey-7;
+}
+.jd-empty-btm {
+  margin-bottom: 2rem;
+}
+.jd-feature-trending {
+  margin-right: 14px;
+}
+
+
+// New Code
+
+.d-jd-review-title {
+  background: #f8f7fa;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.jd-side-information {
+  // margin-top: -13em;
+  margin-top: -10%;
+}
+.interview-slots {
+  width: 20px;
+  padding: 0px;
+  text-align: center;
+  font-size: 10px
+}
+.no-slots {
+  color: rgb(91, 120, 124);
+}
+.promotion-banner-card {
+  background-color: @yellow-1;
+  & .jd-upgrade-app {
+    font-size: 18px;
+    font-weight: bold;
+    color: @yellow-10;
+  }
+
+  & .promotion-btn {
+    background: @yellow-10;
+    border-color: @yellow-10;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+}
+.jd-score-card {
+  background: #FAFBFB;
+  
+  a.ant-btn {
+    padding-top: 8px !important;
+  }
+
+  & .ant-card-body {
+    padding: 10px 24px !important;
+  }
+
+  & .score-info {
+    color: #828FA8;
+  }
+}
+.d-jd-container {
+  padding-bottom: 3em;
+}
+
+.jd-cta {
+  margin-top: 1rem;
+  a.ant-btn {
+    padding-top: 8px !important;
+  }
+}
+
+.POC-success-modal{
+  .ant-modal-content{
+    background-color: black;
+  }
+  .ant-typography {
+    color: #fff;
+  }
+}
+
+

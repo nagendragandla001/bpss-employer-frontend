@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path d="M0 0H48V48H0z" transform="translate(-1186 -692) translate(0 640) translate(952 32) translate(234 20)"/>
+                        <g>
+                            <g>
+                                <path fill="#AEBABB" fill-rule="nonzero" d="M16.95 6.75C16.95 3.028 13.922 0 10.2 0S3.45 3.028 3.45 6.75c0 2.237 1.094 4.223 2.775 5.452L0 13.745V24.9h20.4V13.745l-6.225-1.543c1.681-1.23 2.775-3.215 2.775-5.452zm-11.248.062c.674.167 1.544.316 2.502.316h.006c2.4-.002 4.404-.91 5.876-2.643.39.666.614 1.44.614 2.265 0 2.481-2.019 4.5-4.5 4.5-2.46 0-4.465-1.985-4.498-4.438zM10.2 2.25c.837 0 1.62.23 2.292.63-1.047 1.308-2.46 1.98-4.216 1.997-.78.009-1.498-.115-2.042-.25.76-1.414 2.252-2.377 3.966-2.377zM2.25 15.505l2.396-.594c.34 3.407 1.839 6.07 3.075 7.739H2.25v-7.145zm15.9 7.145h-5.471c1.236-1.669 2.735-4.332 3.075-7.739l2.396.594v7.145z" transform="translate(-1186 -692) translate(0 640) translate(952 32) translate(234 20) translate(7.2 4.8) translate(6.75 7.2)"/>
+                                <path fill="#FFF" fill-rule="nonzero" d="M10.275 13.813v.024l3.267.526c-.19 2.559-1.333 5.866-3.266 6.254l-.001.024-.074-.01-.076.01v-.025l-.027-.004c-1.918-.412-3.051-3.702-3.24-6.25l3.267-.525v-.024l.075.012.075-.012z" transform="translate(-1186 -692) translate(0 640) translate(952 32) translate(234 20) translate(7.2 4.8) translate(6.75 7.2)"/>
+                                <path fill="#FFF" d="M4.35 15L10.05 13.62 16.35 15 13.65 22.68 5.85 22.68z" transform="translate(-1186 -692) translate(0 640) translate(952 32) translate(234 20) translate(7.2 4.8) translate(6.75 7.2)"/>
+                            </g>
+                            <path fill="#AEBABB" fill-rule="nonzero" d="M25.741 0H0v38.4h33.9V8.159L25.741 0zm.659 3.841L30.059 7.5H26.4V3.841zM2.25 36.15V2.25h21.9v7.5h7.5v26.4H2.25z" transform="translate(-1186 -692) translate(0 640) translate(952 32) translate(234 20) translate(7.2 4.8)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

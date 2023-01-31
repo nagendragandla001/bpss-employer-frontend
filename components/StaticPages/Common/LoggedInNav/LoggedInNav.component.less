@@ -1,0 +1,189 @@
+@import "~rfs/less";
+
+@navbar-li-padding: 20px;
+
+.common-nav {
+  & .logged-in-desktop-menu {
+    max-height: 64px;
+    min-height: 64px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    & li {
+      font-size: 16px;
+      max-height: 64px;
+      font-weight: bold;
+      min-width: 60px;
+      display: inline-flex;
+      margin: 0 !important;
+      &::after {
+        left: calc(20px - @navbar-li-padding);
+        right: calc(20px - @navbar-li-padding);
+      }
+      &:first-of-type {
+        padding-right: 10px;
+        margin: 0px !important;
+        padding: 0px !important;
+        .padding-right(15px) !important;
+        border: none;
+        & > a {
+          display: flex;
+          padding-left: 0;
+          padding-right: 24px;
+        }
+        &::after {
+          border: none !important;
+        }
+      }
+    }
+  }
+  & .nav-dropdown .ant-dropdown-trigger {
+    display: flex;
+  }
+  & .my-plan {
+    border-radius: 18px;
+    opacity: 0.94;
+    color: #001940;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    margin-left: 18px;
+    border: none;
+    display: flex;
+    align-items: center;
+    max-height: 30px;
+  }
+  & .logged-my-plan {
+    border-radius: 18px;
+    opacity: 0.94;
+    color: #001940;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    margin-left: 18px;
+    border: solid 1px #df6101;
+  }
+  & .post-a-job-btn {
+    padding: 2px 16px 2px 12px;
+    border: none;
+    background: @primary-color;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      filter: "grayscale(1) brightness(100)";
+    }
+  }
+  & .job-posting-help-btn {
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 6px;
+    border: none;
+    height: 32px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 1rem;
+    margin-right: 8px;
+  }
+  & .padding-right-24 {
+    padding-right: 1.5rem;
+  }
+  & .flex-all-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &.logged-in-mobile-menu-top {
+    &.transparent-menu {
+      justify-content: flex-end;
+    }
+    &.job-posting {
+      background-color: #190e2c;
+    }
+    padding: 0 16px;
+    & .menu-title {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+  &.logged-in-mobile-menu-bottom {
+    height: 56px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #fff;
+    border-top: 1px solid @charcoal-3;
+    & .mobile-menu-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: none;
+      & li {
+        &.ant-menu-item-selected {
+          border-bottom: none;
+          & .mobile-menu-link {
+            color: @blue-8;
+            border-bottom: none;
+            & .mobile-menu-text {
+              color: @blue-8;
+              font-weight: bold;
+            }
+          }
+        }
+        &.ant-menu-item-disabled {
+          & .mobile-menu-text {
+            color: rgba(0, 0, 0, 0.25) !important;
+            font-weight: normal !important;
+          }
+        }
+        &::after,
+        &:hover::after {
+          border-bottom: none;
+        }
+      }
+    }
+    & .ant-menu-item {
+      border-bottom: none;
+    }
+    & .mobile-menu-link {
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 1;
+      align-items: center;
+      flex-direction: column;
+      & .mobile-menu-text {
+        font-size: 10px;
+        line-height: 16px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.dropdown-menu-container {
+  min-width: 120px;
+  border-radius: 4px;
+  // top: 26px;
+  padding: 0.5rem 0;
+  & li {
+    width: 100%;
+    text-align: right;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+  }
+}
+
+.navgiator-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.my-plan-style {
+  margin-left: 8px;
+}
+.nav-right {
+  padding-right: 4px;
+}

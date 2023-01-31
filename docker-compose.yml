@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  employer-frontend:
+    build: .
+    command: ["npm", "run", "dev"]
+    volumes:
+      - ./employer-frontend:/app/employer-frontend
+      - node-modules:/app/employer-frontend/node_modules
+    ports:
+      - "3000:3000"
+volumes:
+  node-modules:
+  # employer-frontend-prod:
+  #   build: .
+  #   command: ["npm", "run", "dev"]
+  #   # volumes:
+  #   #   - ./employer-frontend:/app/employer-frontend
+  #   #   - node-modules:/app/employer-frontend/node_modules
+  #   ports:
+  #     - "3000:3000"

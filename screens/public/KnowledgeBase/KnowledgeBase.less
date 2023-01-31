@@ -1,0 +1,29 @@
+@import "~rfs/less";
+
+.static-kb {
+  & .search-input {
+    .padding-top(50px);
+    & .ant-input-affix-wrapper {
+      padding-left: 16px;
+      border-radius: 4px;
+      background-color: @charcoal-1;
+      & .ant-input-prefix {
+        margin-right: 15px;
+      }
+      & input {
+        background-color: @charcoal-1;
+      }
+    }
+  }
+
+  & .kb-section {
+    .padding-top(80px);
+    .padding-bottom(80px);
+    & .kb-link {
+      .font-size(18px);
+      .rfs(20px, line-height);
+      font-weight: 700;
+      .margin-bottom(24px);
+    }
+  }
+}

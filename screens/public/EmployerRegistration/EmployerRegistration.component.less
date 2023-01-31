@@ -1,0 +1,117 @@
+@import "~rfs/less";
+
+.hero-text {
+  font-size: 20px;
+  .padding-top(80px);
+}
+
+.section-loader {
+  text-align: center;
+  .padding-top(20px);
+  .padding-bottom(100px);
+  width: 100%;
+  & span {
+    font-size: 50px;
+  }
+}
+
+.registration-form {
+  & .login-btn {
+    padding: 8px;
+    font-weight: bold;
+  }
+}
+
+.m-registration-container {
+  & .text-orange{
+    color: @temp-secondary-color;
+  }
+  & .m-testimonal-card {
+    background: #130247;
+    border-radius: 13px;
+    padding: 18px;
+    & .ant-card-body {
+      padding: 0px;
+      & .testimonial-content {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}
+.unified-form{
+  @media (max-width: @screen-sm) {
+    height: 500px;
+  }
+  & .mobile-input{
+    border: 1px solid #D1D5E9;
+    border-radius: 8px;
+  }
+}
+
+.d-registration-container {
+  & .testimonal-container {
+    & .text-orange{
+      color: @temp-secondary-color;
+    }
+    padding-top: 7.5em;
+  }
+  & .registration-form-wrapper{
+    padding-top: 4em;
+    & .registration-form-card {
+      padding-top: 4em;
+      &.ant-card {
+        background: #F7F7F7;
+        border: 1px solid #EBEBEB;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 0px rgba(91, 120, 124, 0.16);
+        border-radius: 8px;
+        .padding-top(46px);
+        .padding-bottom(40px);
+  
+        & label {
+          height: auto;
+        }
+      }
+      
+      & .registration-submit-btn {
+        background-color: @temp-base-color;
+        color: #fff;
+        border-color: @temp-base-color;
+        border-radius: 40px;
+        height: 42px;
+        padding: 0px;
+        font-weight: 600;
+        .font-size(16px);
+        .rfs(24px, line-height);
+        .margin-top(30px);
+  
+        &:hover {
+          background-color: darken(@temp-base-color, 5%);
+          border-color: darken(@temp-base-color, 5%);
+        }
+      }
+    }
+  }
+
+  & .testimonial-content {
+    color: #777777 !important;
+  }
+}
+
+& .otp-input{
+  height: 48px;
+  width: 50% !important;
+  border: 1px solid #ABB2C1;
+  border-radius: 8px;
+}
+
+& .otp-input:focus {
+  outline: none;
+  border-bottom: 2px solid #1B2D93;
+  
+}
+& .otp-warning {
+  margin-top: 12px !important;
+}
+
+

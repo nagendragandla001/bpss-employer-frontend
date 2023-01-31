@@ -1,0 +1,321 @@
+@step3-carousel-height: 144px;
+@step3-poc-carousel-height: 64px;
+.step3-carousel {
+  & .carousel-arrows {
+    height: @step3-carousel-height !important;
+  }
+  & .slick-list {
+    height: @step3-carousel-height !important;
+    padding: 0 !important;
+  }
+  & .slick-checkbox {
+    height: @step3-carousel-height;
+    &.ant-checkbox-wrapper {
+      position: relative;
+      & > span:nth-child(1) {
+        position: absolute;
+      }
+      & > span:nth-child(2) {
+        height: 100%;
+      }
+      & .checkbox-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0;
+        max-width: 214px;
+        width: 214px;
+        padding: 12px 12px 16px 0;
+      }
+    }
+  }
+  & .silck-slide {
+    width: 207px !important;
+    height: @step3-carousel-height;
+    border: 1px solid #ccc;
+    &.slick-active {
+      border: none;
+    }
+  }
+  & .slick-dots {
+    display: none !important;
+  }
+}
+
+.step3-addNewAddress {
+  & .ant-modal-body {
+    padding-top: 1em;
+  }
+  & .ant-modal-header {
+    background-color: #f4f5f7;
+    display: flex;
+    justify-content: center;
+  }
+  & .ant-modal-title {
+    font-size: 18px;
+    font-weight: 800px;
+  }
+}
+
+.m-add-new-address {
+  & .ant-modal-close {
+    left: 0;
+  }
+  & .ant-modal-body {
+    padding: 16px;
+  }
+  & .ant-modal-header {
+    padding-left: 55px;
+    & .ant-modal-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: @charcoal-10;
+    }
+  }
+
+  & .ant-form-item-label {
+    label {
+      color: @charcoal-8 !important;
+    }
+  }
+
+  .overlay-interview-location {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .btn-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: @charcoal-10;
+    font-size: 14px;
+    padding: 4px 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: lightgray;
+      z-index: 9999;
+    }
+  }
+
+  .m-adress-submit-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 56px;
+  }
+}
+
+.search-location {
+  & .ant-select-selector {
+    align-items: center !important;
+    height: 48px !important;
+    border-bottom: 1px solid #406367 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  & .ant-select-selection-search {
+    background-color: @charcoal-2 !important;
+  }
+  .ant-select-selection-item {
+    color: @charcoal-10 !important;
+  }
+  & .ant-input-affix-wrapper,
+  .ant-input {
+    border: none !important;
+    background-color: @charcoal-2 !important;
+    box-shadow: none !important;
+  }
+}
+
+.slick-checkbox {
+  min-width: 240px !important;
+  max-width: 240px !important;
+  margin-right: 16px;
+  border-radius: 4px;
+  display: flex;
+  // box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+  &.ant-checkbox-wrapper {
+    border: 1px solid @charcoal-3;
+    // box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+    & .ant-checkbox {
+      top: 16px;
+      left: 16px;
+    }
+    & .checkbox-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px 0 0 22px;
+    }
+    & .ant-checkbox-inner {
+      border: 1px solid @charcoal-8;
+      width: 16px !important;
+      height: 16px !important;
+      border-radius: 8px;
+      &::after {
+        border-radius: 8px;
+        background: #fff;
+        width: 6px;
+        height: 6px;
+        top: 8px;
+        left: 4px;
+      }
+    }
+  }
+
+  &.ant-checkbox-wrapper-checked {
+    border: 1px solid @blue-7;
+    //background-color: @blue-1;
+    box-shadow: none;
+    & .ant-checkbox-inner {
+      border: 1px solid @blue-7;
+      background-color: @blue-7;
+      &::after {
+        border-radius: 8px;
+        background: #fff;
+        width: 6px;
+        height: 6px;
+        top: 8px;
+        left: 4px;
+      }
+    }
+  }
+  & .ant-checkbox-checked::after {
+    border: none !important;
+  }
+}
+
+.step3-carousel,
+.step3-carousel-poc {
+  & .carousel-arrows {
+    background: none;
+    background-image: linear-gradient(
+      to left,
+      #fff 49%,
+      rgba(255, 255, 255, 0)
+    );
+    border-radius: 0;
+    position: absolute;
+    box-shadow: none;
+    width: 45px;
+    right: 0;
+    &:nth-child(1) {
+      left: 0;
+      display: none;
+    }
+  }
+}
+
+.step3-carousel-poc {
+  & .carousel-arrows {
+    height: @step3-poc-carousel-height !important;
+  }
+  & .slick-list {
+    height: @step3-poc-carousel-height !important;
+    padding: 0 !important;
+  }
+  & .slick-checkbox {
+    height: @step3-poc-carousel-height;
+    &.ant-checkbox-wrapper {
+      &.ant-radio-button-wrapper-checked {
+        border: solid 1px @blue-7;
+        background-color: @blue-1;
+      }
+    }
+  }
+  & .silck-slide {
+    width: 207px !important;
+    height: @step3-poc-carousel-height;
+    border: 1px solid @charcoal-8;
+    &.slick-active {
+      border: none;
+    }
+  }
+  & .slick-dots {
+    display: none !important;
+  }
+}
+
+.step3-carousel-width-450 {
+  & .slick-list {
+    & .slick-track {
+      width: 512px !important;
+      display: flex;
+    }
+  }
+}
+
+.repeat-slots-checkbox {
+  .d-jp-interview-slot {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+    height: auto;
+    min-width: 80px;
+    & .ant-checkbox-wrapper {
+      & .ant-checkbox {
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: flex-end;
+        & + span {
+          padding: 0;
+        }
+      }
+      &.d-jp-interview-checkbox {
+        //box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+        padding: 6px 6px 8px 12px;
+        border-radius: 4px;
+        border: 1px solid @charcoal-3;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        & .d-jp-interview-text {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          padding-right: 15px;
+          & .d-jp-interview-day {
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 20px;
+          }
+          & .d-jp-interview-date {
+            font-size: 20px;
+            line-height: 24px;
+          }
+          & .d-jp-interview-month {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 20px;
+            text-transform: uppercase;
+          }
+        }
+      }
+      &.ant-checkbox-wrapper-checked {
+        &.d-jp-interview-checkbox {
+          border: 1px solid @blue-7;
+          // background-color: @blue-1;
+          box-shadow: none;
+          & .ant-checkbox-inner {
+            border: 1px solid @blue-7;
+          }
+        }
+      }
+    }
+  }
+}

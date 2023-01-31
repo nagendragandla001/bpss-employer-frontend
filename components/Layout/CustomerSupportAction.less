@@ -1,0 +1,22 @@
+.customer-support-block {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  & .can-we-help-btn {
+    height: 58px;
+    width: 198px;
+    padding: 0.5rem;
+    border-radius: 34px;
+    border: none;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.28);
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: @blue-grey-7;
+  }
+
+  @media screen and (max-width: @screen-sm-max) {
+    bottom: 110px;
+    right: 5px;
+  }
+}

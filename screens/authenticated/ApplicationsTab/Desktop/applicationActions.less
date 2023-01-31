@@ -1,0 +1,227 @@
+@import "~rfs/less";
+
+.app-actions-info-btn {
+  height: 40px;
+  font-size: 12px;
+  text-align: end;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  color: @blue-grey-7;
+  background-color: @charcoal-1;
+  border: 1px solid @charcoal-3;
+  &:hover,
+  &:focus {
+    background-color: @charcoal-1;
+    border: 1px solid @charcoal-3;
+    color: @blue-grey-7;
+    cursor: not-allowed;
+  }
+}
+.app-actions-two-btn {
+  border-radius: 16px;
+  height: 32px;
+  padding: 0 18px;
+  border: solid 1px #abb2c1;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.app-actions-circle-btn {
+  border: solid 1px #abb2c1;
+  min-width: 32px;
+  height: 32px;
+  padding: 0;
+  .margin-left(8px);
+}
+.app-actions-modal {
+  .ant-modal-content {
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  .ant-modal-header {
+    border-bottom: solid 1px @blue-grey-2;
+    .ant-modal-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .ant-modal-body {
+    background: @charcoal-1;
+  }
+  .ant-modal-footer {
+    height: 72px;
+    padding: 0 1rem;
+    background: @charcoal-1;
+    border-top: solid 1px @blue-grey-2;
+  }
+}
+
+.app-actions-sfi-text {
+  font-size: 12px;
+  span {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  margin-right: 1rem;
+  display: block;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.app-actions-rejection-reasons {
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .checkbox {
+    padding: 0.6rem 0;
+    .ant-checkbox-wrapper span:last-child {
+      padding-left: 1rem;
+      font-size: 14px;
+    }
+  }
+}
+
+.feedback-modal-content {
+  .ac-light-gray-text {
+    color: @blue-grey-6;
+  }
+  .ant-form-item-label {
+    label {
+      font-size: 12px;
+      color: @text-color;
+    }
+  }
+  // .ant-form-item-explain {
+  //   color: @red-8;
+  //   font-size: 12px;
+  // }
+  .ant-form-item-has-error {
+    .ant-input-prefix {
+      border-color: @error-color;
+    }
+  }
+}
+
+.app-actions-feedback-input {
+  padding: 0;
+  & input {
+    border: none !important;
+    padding: 12px !important;
+  }
+  .ant-input-prefix {
+    width: 48px;
+    padding: 12px;
+    justify-content: center;
+    border-right: solid 1px @blue-grey-4;
+    margin-right: 1rem;
+  }
+}
+
+.app-actions-feedback-datepicker {
+  .ant-picker {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: none;
+    &:hover,
+    &:focus,
+    &.ant-picker-focused {
+      border: solid 1px @blue-grey-4;
+      border-bottom: 2px solid @primary-color;
+    }
+  }
+}
+
+.width-height-48 {
+  height: 48px;
+  width: 48px;
+}
+
+.feedback-modal-footer {
+  height: 72px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .primary-btn {
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    height: 40px;
+  }
+  .link-btn {
+    font-weight: bold;
+    font-size: 14px;
+    color: @charcoal-8;
+  }
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.feedback-modal-candidate-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.notification-image {
+  margin-right: 8px;
+}
+
+.custom-notification {
+  border-radius: 4px;
+  min-height: 94px;
+  .ant-notification-notice-icon {
+    top: 25%;
+    margin-left: 0px;
+  }
+  .ant-notification-notice-message {
+    margin-left: 64px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .ant-notification-notice-description {
+    margin-left: 64px;
+    font-size: 12px;
+    opacity: 0.84;
+    color: #ffffff;
+  }
+  .ant-notification-notice-close {
+    font-size: 1rem;
+    color: #ffffff;
+    opacity: 0.48;
+    right: 12px;
+    top: 12px;
+  }
+}
+.custom-notification-close-icon {
+  color: #ffffff;
+}
+.success-notification {
+  background-color: @charcoal-10;
+}
+.error-notification {
+  background-color: @red-9;
+}
+.word-break {
+  word-break: break-all;
+}
+.format-class {
+  padding-right: 2px;
+  padding-bottom: 2px;
+}
+.display-date-f {
+  font-size: 11px;
+}
+.format-display-date {
+  font-size: 11px;
+  color: #001443;
+  margin-left: 4px;
+}
+.m-left-4 {
+  margin-left: 4px;
+}

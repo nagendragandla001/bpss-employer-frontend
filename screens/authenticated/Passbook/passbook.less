@@ -1,0 +1,225 @@
+@import "~rfs/less";
+
+.passbook-container {
+  // max-width: 555px;
+  // margin: 2.5rem auto;
+
+  & .header {
+    padding-bottom: 15px;
+    span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  & .my-plans-collapse {
+    & .ant-collapse-item {
+      margin-bottom: 24px;
+      border: 1px solid #f2f4f5;
+      border-radius: 4px;
+
+      & .plan-type {
+        .font-size(10px);
+        line-height: 20px;
+        color: #bcbcbc;
+      }
+
+      & .plan-name {
+        .font-size(20px);
+        color: #ababab;
+        line-height: 40px;
+        width: 100%;
+        text-transform: capitalize;
+      }
+
+      & .plan-expiry {
+        .margin-bottom(8px);
+        .font-size(12px);
+        color: #b0b0b0;
+      }
+
+      & .plan-details {
+        padding: 36px 24px;
+        background-color: #ffffff;
+        &:not(:last-child) {
+          border-bottom: 2px solid #f2f4f5;
+        }
+      }
+
+      & .plan-remaining-credits {
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      & .plan-total-credits {
+        font-size: 12px;
+        line-height: 28px;
+      }
+
+      & .plan-progress {
+        & .ant-progress-inner {
+          border-radius: 0;
+          & .ant-progress-bg {
+            max-height: 4px;
+            border-radius: 0;
+          }
+        }
+      }
+
+      & .upgrade-plan {
+        border-color: transparent;
+        background-color: #e87d15;
+        border-radius: 4px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+
+    & .ant-collapse-header {
+      background-position: center center;
+      background-size: contain;
+      color: #b0b0b0;
+      height: 112px;
+      padding: 13px 34px 25px 23px;
+
+      & .ant-collapse-arrow {
+        font-size: 16px;
+      }
+    }
+
+    & .expired-plan {
+      & .ant-collapse-header {
+        background-image: url("/images/my-plans/expired-plans-background.svg");
+        & .ant-collapse-arrow {
+          color: #596685;
+        }
+      }
+      & .plan-name,
+      .plan-type,
+      .plan-expiry {
+        color: #596685;
+      }
+    }
+    & .active-plan {
+      & .ant-collapse-header {
+        background-image: url("/images/my-plans/img-plans-background.png");
+        & .ant-collapse-arrow {
+          color: #fff;
+        }
+      }
+    }
+
+    & .ant-collapse-content {
+      border: none;
+      background-color: #fff;
+    }
+    & .ant-collapse-content-box {
+      padding: 0;
+    }
+  }
+
+  .passbook {
+    border-radius: 4px;
+    background: #ffffff;
+    // border: solid 1px @blue-grey-2;
+    .passbook-details-container {
+      min-height: 110px;
+      padding: 1rem 1.5rem 1.5rem 1rem;
+      .passbook-details {
+        & .ant-col {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        .wallet-text {
+          font-size: 12px;
+          font-weight: bold;
+          color: @blue-grey-5;
+          text-align: right;
+        }
+        .wallet-balance {
+          font-size: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .header {
+      padding: 0.8rem 1.5rem 0.8rem 1rem;
+      background-color: @blue-grey-1;
+      border-top: 1px solid #f2f4f5;
+      span {
+        color: @blue-grey-5;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+
+    .p-bottom-1rem {
+      padding-bottom: 1rem;
+    }
+
+    .txn-details {
+      padding: 1rem;
+      border-bottom: 1px solid @charcoal-2;
+      max-height: 124px;
+      & .txn-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      & .txn-ref {
+        font-size: 12px;
+        color: @blue-grey-6;
+      }
+      & .download-invoice {
+        font-size: 12px;
+        font-weight: bold;
+        padding: 0;
+        color: @blue-7;
+        height: 16px;
+      }
+      & .txn-amount {
+        font-size: 20px;
+        text-align: right;
+        .text-blue {
+          color: @blue-7;
+        }
+        .text-red {
+          color: @red-7;
+        }
+      }
+      & .txn-date {
+        font-size: 10px;
+        color: @charcoal-6;
+      }
+    }
+  }
+  & .padding-left-4 {
+    padding-left: 4px;
+  }
+  & .flex-all-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & .empty-state {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 3rem;
+  }
+}
+.passbook-msg-display {
+  font-size: 12px;
+}
+
+.my-plans-container {
+  & .txn-header {
+    background-color: #fafbfb;
+    padding: 12px 16px;
+  }
+  .padding-top(27px);
+  .padding-bottom(60px);
+  background-color: #f7f7f7;
+  min-height: 88vh;
+}

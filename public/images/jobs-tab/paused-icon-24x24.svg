@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path d="M0 0H24V24H0z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4)"/>
+                        <g fill-rule="nonzero">
+                            <g>
+                                <path fill="#D8DFE0" d="M11.6 4.776L11.6 9.241 9.599 15.428 0 15.428 0 0.75 7.715 0.75z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4) translate(4.5 4.5)"/>
+                                <path fill="#FFF" d="M12.35 4.026L12.35 8.491 10.349 14.678 0.75 14.678 0.75 0 8.465 0z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4) translate(4.5 4.5)"/>
+                                <path fill="#FFF" d="M12.35 4.026L12.35 8.491 10.349 14.678 6.55 14.678 6.55 0 8.465 0z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4) translate(4.5 4.5)"/>
+                                <path fill="#D8DFE0" d="M12.35 4.026L8.465 4.026 8.465 0z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4) translate(4.5 4.5)"/>
+                                <path fill="#5B787C" d="M2.887 5.816L10.208 5.816 10.208 6.704 2.887 6.704z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4) translate(4.5 4.5)"/>
+                                <g fill="#5B787C">
+                                    <path d="M.005.014L3.668.014 3.668.902.005.902zM.005 5.343L3.668 5.343 3.668 6.231.005 6.231zM.005 3.566L5.146 3.566 5.146 4.455.005 4.455z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4) translate(4.5 4.5) translate(2.882 4.026)"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g fill-rule="nonzero">
+                            <path fill="#FFCE32" d="M4.5 0C2.019 0 0 2.019 0 4.5S2.019 9 4.5 9 9 6.981 9 4.5 6.981 0 4.5 0z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4) translate(12 12)"/>
+                            <path fill="#816E34" d="M3.938 6.188L2.813 6.188 2.813 2.813 3.938 2.813zM6.188 6.188L5.063 6.188 5.063 2.813 6.188 2.813z" transform="translate(-176 -296) translate(156 160) translate(16 132) translate(4 4) translate(12 12)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,99 @@
+@import "~rfs/less";
+
+.unverified-email-wrapper {
+  border: 1px solid #e87d15;
+  background-color: #fff4ec;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .padding-top(16px);
+  .padding-left(40px);
+  .padding-right(25px);
+  .padding-bottom(14px);
+  .margin-bottom(20px);
+  .margin-top(20px);
+  @media screen and (max-width: @screen-sm-max) {
+    .margin-left(20px);
+    .margin-right(20px);
+  }
+
+  & .unverified-email-btn {
+    background-color: @temp-secondary-color;
+    border-color: @temp-secondary-color;
+    color: #fff;
+    border-radius: 4px;
+    max-height: 27px;
+    padding-top: 0;
+    padding-bottom: 0;
+    .font-size(12px);
+  }
+}
+
+.addon-modal {
+  & .ant-modal-body {
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  & .modal-section-image {
+    width: 215px;
+    background-color: black;
+    .padding-top(52px);
+    .padding-left(47px);
+    .padding-right(56px);
+    .padding-bottom(60px);
+
+    @media screen and (max-width: @screen-sm-max) {
+      .padding-top(40px);
+      .padding-left(14px);
+      .padding-right(8px);
+      .padding-bottom(18px);
+    }
+    & .ant-typography {
+      color: @blue-grey-2 !important;
+    }
+    & .addon-modal-text {
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 600;
+      @media screen and (max-width: @screen-sm-max) {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+      }
+    }
+    & .addon-modal-text-2 {
+      font-size: 12px;
+      line-height: 20px;
+      .padding-top(15px);
+      .padding-bottom(50px);
+      @media screen and (max-width: @screen-sm-max) {
+        padding-top: 20px;
+      }
+    }
+  }
+  & .modal-section-actions {
+    background-color: #f7f7f7;
+    padding: 25px;
+    & .modal-action-btn {
+      border-radius: 4px;
+      .font-size(16px);
+      .rfs("30px", "line-height");
+      font-weight: bold;
+    }
+    & .modal-text {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    & .modal-upgrade-description {
+      line-height: 20px;
+      color: @text-color;
+      .margin-bottom(15px) !important;
+    }
+    @media screen and (max-width: @screen-sm-max) {
+      margin-top: 55px;
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,292 @@
+.jt-mobile-container {
+  background-color: @blue-grey-1;
+  margin-bottom: 56px;
+}
+.m-modal-title {
+  font-size: 20px;
+  color: @charcoal-10;
+  margin: auto 0;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.m-job-model {
+  .ant-modal-body {
+    padding: 16px;
+  }
+  .m-job-modal-content {
+    font-size: 16px;
+    font-weight: bold;
+    color: @charcoal-10;
+  }
+  .m-job-cse {
+    border-radius: 4px;
+    border: 1px solid @charcoal-3;
+    padding: 8px;
+    margin-top: 16px;
+  }
+  .m-job-cse-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: @charcoal-10;
+  }
+  .m-job-cse-content {
+    font-size: 12px;
+    color: @charcoal-6;
+  }
+  .m-job-cse-action {
+    border-radius: 4px;
+    font-weight: bold;
+  }
+}
+.m-jobs-tab {
+  background-color: @charcoal-2;
+  height: calc(100vh - 112px);
+
+  .m-jt-tabs {
+    background-color: #ffffff;
+    & .ant-tabs-tab {
+      margin: 0 !important;
+    }
+  }
+
+  .ant-tabs-nav {
+    padding-left: 8px;
+    margin: 0;
+  }
+  .m-show-results {
+    padding: 16px 0 16px 16px;
+    font-size: 12px;
+    color: @charcoal-6;
+  }
+
+  .m-jt-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: @blue-grey-12;
+    max-width: 90vw;
+  }
+  .m-jt-card-subtitle {
+    font-size: 14px;
+    color: @blue-grey-5;
+    font-weight: normal;
+  }
+  .ant-card-body {
+    padding: 16px;
+  }
+
+  .m-jt-card {
+    .m-jt-active-banner {
+      color: @red-9;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .m-jt-premium-banner {
+      color: @yellow-9;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .m-jt-active-tip {
+      background-color: @charcoal-2;
+      padding: 8px 0;
+      color: @blue-grey-12;
+      font-size: 12px;
+    }
+    .m-jt-pause-banner {
+      // background-color: @charcoal-2;
+      color: @blue-grey-12;
+      font-size: 12px;
+      border: 1px solid @red-3;
+    }
+    .m-jt-upgrade-banner {
+      background-color: @yellow-1;
+
+      .banner-label {
+        color: @yellow-9;
+        font-size: 14px;
+      }
+      .banner-button {
+        background-color: #361d87;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        border-radius: 4px;
+        width: 126px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+      }
+      .m-feature-job-trend {
+        margin-right: 0.3rem;
+      }
+    }
+    .m-jt-paused-tab-banner {
+      background-color: @yellow-1;
+      padding: 8px 0;
+      color: @blue-grey-12;
+      font-size: 12px;
+    }
+    .m-jt-closed-banner {
+      background-color: @red-2;
+      padding: 8px 0;
+      color: @blue-grey-12;
+      font-size: 12px;
+
+      .red-label {
+        color: @red-8;
+      }
+    }
+    .m-jt-semi-label {
+      font-size: 12px;
+      color: @charcoal-6;
+    }
+    .m-jt-bold-label {
+      font-size: 14px;
+      color: @charcoal-6;
+      font-weight: bold;
+    }
+
+    .ant-card-actions {
+      & li {
+        width: auto !important;
+        border: none;
+        margin: 3px 0;
+      }
+    }
+
+    .m-jt-total-applications {
+      margin-top: 19px;
+      margin-bottom: 8px;
+      &:extend(.m-jt-card-subtitle);
+    }
+
+    .m-jt-application {
+      width: 104px;
+      min-height: 72px;
+      display: inline-flex;
+      padding: 0;
+      flex-direction: column;
+      border-radius: 4px;
+      border: solid 1px @charcoal-3;
+      background-color: #ffffff;
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      .m-jt-application-label {
+        padding: 8px 0;
+        font-size: 12px;
+        color: @blue-grey-12;
+      }
+      .m-jt-application-count {
+        font-size: 24px;
+        color: @blue-grey-12;
+      }
+    }
+  }
+
+  .m-jt-draft-card {
+    .ant-card-actions {
+      background-color: @charcoal-2;
+      border-bottom: 1px solid #d8dfe0;
+      padding: 0 16px;
+      padding-right: 16px;
+
+      .m-jt-draft-label {
+        font-size: 12px;
+        color: @charcoal-6;
+      }
+      .m-jt-draft-page {
+        font-size: 14px;
+        color: @charcoal-10;
+        font-weight: normal;
+      }
+      .m-jt-draft-btn {
+        border-radius: 4px;
+      }
+    }
+
+    .m-job-progress {
+      margin-top: 24px;
+      .ant-progress-success-bg {
+        background-color: @blue-7;
+      }
+    }
+  }
+
+  .placeholder-illustration {
+    margin-top: 80px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .empty-text {
+    font-size: 14px;
+    color: @charcoal-6;
+    span {
+      text-transform: capitalize;
+    }
+  }
+  .empty-data {
+    font-size: 16px;
+    color: @charcoal-10;
+    text-align: center;
+    padding: 0 16px;
+    font-weight: bold;
+    .post-job {
+      margin-top: 22px;
+      border-radius: 4px;
+      height: 36px;
+    }
+  }
+}
+
+.illustration {
+  height: 125px;
+  background-color: @charcoal-2;
+  margin-bottom: 16px;
+  margin-top: 64px;
+}
+
+.m-post-job {
+  position: fixed;
+  bottom: 75px !important;
+  right: 8px;
+  border-radius: 20px;
+  .file-icon {
+    color: @blue-5 !important;
+  }
+}
+
+.round-btn {
+  border-color: @charcoal-2;
+  display: flex;
+  align-items: center;
+}
+.m-jt-database {
+  color: #4727ad;
+  font-size: 9px;
+  padding-top: 8px;
+  font-weight: bold;
+  height: 35px;
+}
+.verify-contact-btn {
+  background-color: #361d87;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  margin: auto;
+  font-weight: bold;
+}
+
+.dropdown-line {
+  border: solid 1px #979797;
+  opacity: 0.17;
+}
+.dropdown-btn {
+  display: flex;
+  justify-content: stretch;
+}

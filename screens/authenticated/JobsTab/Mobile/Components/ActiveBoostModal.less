@@ -1,0 +1,57 @@
+.m-active-boost-model {
+    & .m-top-40 {
+        margin-top: 40px;
+    }
+    & .ant-modal-body {
+        padding: 8px;
+        overflow: auto;
+        height: calc(100vh - 56px);
+    }
+
+    & .m-actions-card {
+        & .ant-card-head {
+            border: none !important;
+            min-height: 36px !important;
+            text-align: center;
+            & .ant-card-head-title {
+                padding: 0px !important
+            }
+        }
+        & .ant-card-body {
+            padding: 8px;
+            // margin-left: 32px;
+        }
+        & .ant-list-item {
+            border: none !important;
+            padding: 8px 0 0 0;
+        }
+    }
+
+    & .m-activity-card {
+        background-color: @charcoal-1;
+        & .ant-card-head {
+            border: none !important;
+            text-align: center;
+        }
+        & .ant-card-body {
+            padding: 8px;
+
+            & .ant-list-item:first-of-type {
+                padding-top: 0px;
+            }
+        }
+        & .ant-list-item-meta-content {
+            margin: auto 0;
+        }
+    }
+
+   & .active-boost-note {
+        background: @charcoal-2;
+        margin-top: 48px;
+        padding: 16px;
+        margin-bottom: 152px;
+        span {
+            color: @charcoal-6;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import "~rfs/less";
+
+.end-block-cta {
+  .padding-top(100px);
+  .padding-bottom(100px);
+  background-repeat: no-repeat;
+  background-position: center center !important;
+  background-image: url("/images/static-pages/common/banner-end-block.svg");
+  background-size: cover;
+  & .end-block-title {
+    .font-size(36px);
+    .rfs(56px, line-height);
+    font-weight: 700;
+  }
+  @media screen and (max-width: @screen-sm-max) {
+    margin-top: 100px;
+  }
+}
+
+.job-post-btn {
+  background-color: @temp-base-color;
+  border-color: @temp-base-color;
+  height: 48px;
+  font-weight: 700;
+  color: #fff;
+  .padding-left(1.5rem);
+  .padding-right(1.5rem);
+  .font-size(18px);
+  .rfs(24px, line-height);
+}

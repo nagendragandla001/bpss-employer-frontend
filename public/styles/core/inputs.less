@@ -1,0 +1,353 @@
+// Overriding Default antd input
+// To Revert back, just remove include of this file from the main file
+
+// Ant Custom Input States Override
+.ant-form-item {
+  // Error State
+  &.ant-form-item-has-error {
+    & .ant-input,
+    & .ant-input:hover,
+    & .ant-input:focus {
+      border-color: @error-color;
+    }
+    & .ant-input-password,
+    & .ant-input-password:hover {
+      border-color: @error-color;
+      & .ant-input-password-icon {
+        color: @error-color;
+      }
+    }
+    & .ant-input-affix-wrapper {
+      border-color: @error-color;
+      &.ant-input-affix-wrapper-focused,
+      &:focus,
+      &:hover {
+        border-color: @error-color;
+        & .ant-input,
+        & .ant-input:hover,
+        & .ant-input:focus {
+          border: none;
+          box-shadow: none;
+        }
+      }
+    }
+    & .ant-picker-active-bar {
+      background: @error-color;
+    }
+  }
+}
+
+// Ant Numerical Input
+.ant-input-number,
+.ant-form-item-control-input-content {
+  & .ant-input-number-input {
+    border-radius: 4px;
+    border-color: @blue-grey-4;
+  }
+  &.ant-input-focused,
+  &.ant-input-number-focused {
+    box-shadow: none !important;
+    border-color: @blue-grey-4;
+    border-bottom: 2px solid @primary-color;
+  }
+  & .ant-select-arrow {
+    color: @charcoal-8;
+  }
+}
+
+// Overriding input number
+.ant-input-number {
+  padding: auto;
+
+  & .ant-input-number-input {
+    height: @height-base;
+  }
+  &.ant-input-number-lg {
+    & .ant-input-number-input {
+      height: @height-lg;
+    }
+  }
+  &.ant-input-number-sm {
+    & .ant-input-number-input {
+      height: @height-sm;
+    }
+  }
+  & .ant-input-number-handler-wrap {
+    background: transparent;
+  }
+}
+
+// Ant Select Box
+.ant-select:not(.ant-select-borderless) {
+  &.ant-select-focused {
+    & .ant-select-selector {
+      box-shadow: none !important;
+      border-color: @blue-grey-4 !important;
+      border-bottom: 2px solid @primary-color !important;
+    }
+    & .ant-select-arrow {
+      color: @primary-color;
+    }
+  }
+  & .ant-select-selector {
+    border-color: @blue-grey-4;
+    border-radius: 4px !important;
+  }
+  // Multiple selector
+  &.ant-select-multiple {
+    & .ant-select-selection-item {
+      height: 30px;
+      line-height: 30px;
+      background: #fff;
+      border-radius: 4px;
+      border: 1px solid @blue-grey-8;
+      & .ant-select-selection-item-content {
+        color: @charcoal-10;
+        margin-right: 6px;
+      }
+      & .ant-select-selection-item-remove {
+        color: @charcoal-8;
+        & .anticon-close {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // Changing Arrow
+  & .ant-select-arrow {
+    color: @charcoal-8;
+  }
+}
+// This is outside of ant-select as dropdowwn options are rendered
+// At bottom of the html doc
+.ant-select-dropdown {
+  background-color: #fff;
+  & .ant-select-item {
+    &.ant-select-item-option-active,
+    &.ant-select-item-option-selected {
+      background-color: @charcoal-2;
+    }
+  }
+}
+
+// Radio Buttons
+.ant-radio-group,
+.ant-radio-group-large {
+  & .ant-radio-button-wrapper,
+  .ant-radio-button-wrapper:first-child,
+  .ant-radio-button-wrapper:last-child {
+    border-radius: 6px;
+    border: 1px solid @charcoal-3;
+    font-size: @font-size-base!important;
+    height: @height-base !important;
+    line-height: @height-base!important;
+    margin-right: @radio-wrapper-margin-right;
+    min-width: 80px;
+    text-align: center;
+    margin-bottom: @radio-wrapper-margin-bottom;
+    &:before {
+      content: none !important;
+    }
+    &.ant-radio-button-wrapper-checked {
+      border: 1px solid @blue-7;
+      box-shadow: none;
+      color: @blue-8;
+      background: @btn-active-bg-color;
+    }
+  }
+}
+
+// Ant Checkbox
+.ant-checkbox {
+  & .ant-checkbox-inner {
+    border: 1.5px solid @charcoal-8;
+    border-radius: 2.7px;
+  }
+}
+
+// Quill Input Textarea
+.custom-quill-editor {
+  & .ql-toolbar.ql-snow {
+    border-bottom: none;
+    background: @charcoal-1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    & .ql-formats {
+      // margin-right: 0;
+      & button {
+        padding: 12px;
+        height: 48px;
+        width: 48px;
+      }
+      & .ql-stroke {
+        stroke: @blue-grey-7;
+      }
+      & .ql-fill {
+        fill: @blue-grey-7;
+      }
+    }
+  }
+  & .ql-container.ql-snow {
+    border-bottom: 2px solid @temp-base-color;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+// Checkbox
+
+// Mandatory Checkbox
+.ant-checkbox-wrapper.mandatory-checkbox {
+  & .ant-checkbox-inner {
+    border: 1px solid @charcoal-3;
+    border-radius: 2.2px;
+    width: 13px;
+    height: 13px;
+  }
+  & .mandatory-text {
+    color: @charcoal-6;
+    font-size: 12px;
+  }
+}
+
+// Input Labels
+.ant-form-item-label {
+  & > label {
+    color: @charcoal-10 !important;
+    height: auto !important;
+  }
+}
+
+// Checkbox Group
+.ant-checkbox-group.checkbox-btn {
+  & .ant-checkbox-wrapper {
+    padding: 10px 16px;
+    border: 1px solid @charcoal-3;
+    border-radius: 4px;
+    margin: 0 8px 8px 0;
+    box-shadow: 0 2px 0 0 rgba(91, 120, 124, 0.16);
+    background-color: #fff;
+    &.ant-checkbox-wrapper-checked {
+      border-color: @blue-7;
+      color: @blue-8;
+      box-shadow: none;
+      background: @blue-1;
+      & .ant-checkbox-inner {
+        border-color: @blue-7;
+        background: @blue-7;
+      }
+    }
+    &:focus,
+    &:hover {
+      &.ant-checkbox-wrapper-checked {
+        & .ant-checkbox-inner {
+          border-color: @blue-7;
+          background: @blue-7;
+        }
+        & .ant-checkbox-checked::after {
+          border-color: @blue-7;
+        }
+      }
+    }
+  }
+}
+
+// Overriding checkbox black dot
+.ant-checkbox-wrapper {
+  .ant-checkbox-checked &::after {
+    border-color: @blue-7;
+  }
+  &:hover {
+    .ant-checkbox-checked::after {
+      border: none;
+    }
+  }
+}
+
+// Range Picker
+// .ant-picker-range {
+//   border-radius: 4px;
+//   border: 1px solid @blue-grey-4;
+//   max-height: @input-height-lg;
+//   width: 100%;
+//   & .ant-picker-input {
+//     min-width: 125px;
+//   }
+//   &.ant-picker-large {
+//     & .ant-picker-input > input {
+//       font-size: @font-size-base;
+//     }
+//   }
+//   &.ant-picker-focused {
+//     box-shadow: none;
+//     border-color: @primary-color;
+//   }
+// }
+// .ant-picker-panel {
+//   & .ant-picker-time-panel-cell {
+//     &.ant-picker-time-panel-cell-selected {
+//       & .ant-picker-time-panel-cell-inner {
+//         background-color: @charcoal-2;
+//       }
+//     }
+//   }
+//}
+
+// Addon UI + Prefix
+.ant-input-group,
+.ant-form-item-control-input-content {
+  & > .ant-input {
+    border-radius: 4px;
+    border-color: @blue-grey-4;
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      box-shadow: none !important;
+      border-bottom: 2px solid @primary-color;
+    }
+  }
+  // & .ant-input-group-addon {
+  //   border-radius: 0;
+  //   border-bottom-right-radius: 4px;
+  //   border-top-right-radius: 4px;
+  //   background-color: #fff;
+  //   border-bottom: 2px solid @primary-color;
+  //   min-width: @height-lg;
+  // }
+  & .ant-input-affix-wrapper {
+    border-radius: 4px;
+    border: 1px solid @blue-grey-4;
+    background-color: #fff;
+    & .ant-input {
+      border: none !important;
+    }
+    & .ant-input-prefix {
+      color: @text-color;
+      margin-right: 8px;
+    }
+    &.ant-input-affix-wrapper-focused,
+    &:focus,
+    &:hover {
+      box-shadow: none;
+      border-bottom: 2px solid @primary-color;
+    }
+  }
+
+  //Ant Input Password
+  // & .ant-input-password {
+  //   border-radius: 4px;
+  //   padding-top: 0;
+  //   padding-bottom: 0;
+  //   & .ant-input {
+  //     &.ant-input-lg {
+  //       height: calc(@height-lg - 2px);
+  //     }
+  //     &.ant-input-sm {
+  //       height: calc(@height-sm - 2px);
+  //     }
+  //   }
+  // }
+}

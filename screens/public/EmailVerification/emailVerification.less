@@ -1,0 +1,31 @@
+.email-verification-container {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .details-container {
+    box-shadow: 0 4px 4px 0 rgba(60, 67, 81, 0.2);
+    background: #fafafa;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & .verification-status {
+      font-size: 16px;
+      color: @charcoal-10;
+      padding-top: 1.5rem;
+      max-width: 100%;
+      text-align: center;
+    }
+    & .resend-button {
+      background: @blue-9;
+      font-weight: bold;
+      font-size: 12px;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      margin-top: 1rem;
+    }
+  }
+}

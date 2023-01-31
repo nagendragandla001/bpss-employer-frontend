@@ -1,0 +1,97 @@
+.job-expiry-modal {
+  top: 180px;
+  & .ant-modal-content {
+    border-radius: 4px;
+  }
+
+  & .renew-job-modal-img-container {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    border-bottom: 1px solid #e3e4e6;
+  }
+
+  & .ant-modal-header {
+    border-bottom: 1px solid @charcoal-3;
+  }
+
+  & .modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: @charcoal-10;
+  }
+
+  & .ant-modal-body {
+    padding: 0;
+    & .modal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 28px 37px 0;
+    }
+    & .expiry-details-container {
+      border-radius: 4px;
+      border: 1px solid @charcoal-3;
+      padding: 0.5rem;
+      margin: 10px 10px 0;
+    }
+    & .buttons-container {
+      padding: 25px 41px;
+      & .ant-btn {
+        width: 100%;
+        border-radius: 4px;
+      }
+      & .ant-space,
+      & .ant-space-item {
+        width: 100%;
+      }
+    }
+    & .renew-success-content {
+      padding: 1rem 0 1.875rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & .renew-success-btn-container {
+      padding-bottom: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & .ant-btn {
+        height: 36px;
+        width: 80px;
+        border: none;
+        border-radius: 4px;
+      }
+    }
+  }
+  & .flex-justify-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.job-expiry-modal-container {
+  .link-btn {
+    padding: 0;
+    height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: @blue-grey-12;
+  }
+  .link-btn-clr {
+    padding: 0;
+    height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: @blue-9;
+  }
+  .link-btn-blue {
+    & span:hover {
+      text-decoration: underline;
+    }
+  }
+}

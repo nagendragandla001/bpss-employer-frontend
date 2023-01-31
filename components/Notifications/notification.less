@@ -1,0 +1,87 @@
+// .custom-snack-bar-desktop {
+//   border-radius: 4px;
+//   min-height: 94px;
+//   .ant-notification-notice-icon {
+//     top: 25%;
+//     margin-left: 0px;
+//   }
+//   .ant-notification-notice-message {
+//     font-weight: bold;
+//     font-size: 16px;
+//   }
+//   .ant-notification-notice-description {
+//     font-size: 12px;
+//     opacity: 0.84;
+//     word-break: break-word;
+//   }
+//   .ant-notification-notice-close {
+//     font-size: 1rem;
+//     color: #ffffff;
+//     opacity: 0.48;
+//     right: 12px;
+//     top: 12px;
+//   }
+//   & .with-icon {
+//     .ant-notification-notice-description {
+//       margin-left: 4.5rem;
+//     }
+//     .ant-notification-notice-message {
+//       margin-left: 4.5rem;
+//     }
+//   }
+// }
+
+// .custom-snack-bar-mobile {
+//   border-radius: 4px;
+//   min-height: 56px;
+//   width: 100%;
+//   padding: 0.5rem 1rem;
+//   bottom: 20px;
+//   right: 5px;
+//   .ant-notification-notice-with-icon {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//   }
+//   .ant-notification-notice-icon {
+//     position: static;
+//   }
+//   .ant-notification-notice-message {
+//     display: none;
+//   }
+//   .ant-notification-notice-description {
+//     margin: 0.5rem;
+//     font-size: 12px;
+//     color: #ffffff;
+//   }
+//   .ant-notification-notice-close {
+//     display: none;
+//   }
+// }
+
+&.success-snack-bar {
+  // background-color: @charcoal-10 !important;
+  color: black !important;
+}
+&.info-snack-bar {
+  background-color: @charcoal-10 !important;
+  color: #ffffff !important;
+  .ant-notification-notice-message {
+    color: #ffffff;
+  }
+}
+&.error-snack-bar {
+  color: #ffffff !important;
+  background-color: @red-9 !important;
+  .ant-notification-notice-message {
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 576px) {
+  .ant-notification {
+    width: calc(100vw - 16px);
+    left: 51%;
+    transform: translateX(-50%);
+  }
+}

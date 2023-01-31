@@ -1,0 +1,48 @@
+.add-ons-container {
+  & .addon-main-title {
+    margin-top: 77px;
+  }
+  & .add-on-title {
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  & .add-on-icon {
+    vertical-align: middle;
+    padding-right: 7px;
+  }
+  & .description {
+    color: @blue-grey-7;
+    line-height: 20px;
+    font-size: 10px;
+  }
+  & .add-on-section {
+    padding-top: 30px;
+  }
+  & .add-on-block {
+    & .add-on {
+      border: solid 1px @charcoal-3;
+      height: 114px;
+      border-radius: 7px;
+      padding: 10px 15px 10px 20px;
+
+      & .limit {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      & .add-on-action {
+        margin-top: -12px;
+        & .add-on-action-btn {
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+        }
+        & .add-on-action-suffix-btn {
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+          padding: 8px !important;
+        }
+      }
+    }
+  }
+}

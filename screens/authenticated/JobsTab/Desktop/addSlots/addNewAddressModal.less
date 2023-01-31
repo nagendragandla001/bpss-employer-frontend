@@ -1,0 +1,88 @@
+.add-new-address-drawer{
+    & .ant-drawer-header {
+        padding: 1rem;
+        & .ant-drawer-title {
+            padding: 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: @charcoal-6;
+        }
+    }
+    & .ant-drawer-body {
+        padding: 1.5rem !important;
+        & .add-new-address-title{
+            padding-bottom: 2rem;
+            & .back-arrow-button{
+                margin-right: 1rem;
+                padding: 0;
+                height: 24px;
+                border: 0;
+            }
+        }
+        & .location-autocomplete{
+            width: 100%;
+            border-radius: 4px;
+        }
+        & .gps-icon{
+            border: none;
+            padding: 0;
+            height: 45px;
+            position: absolute;
+            right: 1px;
+            border-radius: 4px;
+            top: 29px;
+            background-color: #e3e4e6;
+        }
+        & .text-area{
+            height: 88px;
+            border-radius: 4px;
+            background-color: #fff !important;
+        }
+        & .google-map-preview{
+            margin-bottom: 1.5rem;
+        }
+        & .add-address-submit-btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            & .ant-btn{
+                width: 320px;
+                height: 40px;
+                border-radius: 4px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+           
+        }
+    }
+    &.add-new-address-drawer-mobile{
+        .ant-drawer-close {
+         display: none;
+        }
+        .ant-drawer-footer {
+          height: 56px;
+          background-color: @charcoal-10;
+          & .btn-grey {
+            height: 100%;
+            width: 100%;
+            border: none;
+            background-color: transparent;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 0;
+            font-weight: bold;
+          }
+        }
+    }
+    & .font-size-20{
+        font-size: 20px;
+    }
+    & .font-bold{
+        font-weight: bold;
+    }
+    & .p-bottom-2rem{
+        padding-bottom: 2rem;
+    }
+}

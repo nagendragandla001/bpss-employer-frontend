@@ -1,0 +1,240 @@
+.app-actions-info-btn-mobile {
+  height: 44px;
+  font-size: 12px;
+  text-align: end;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  color: @charcoal-6 !important;
+  background-color: @charcoal-2 !important;
+  border: none;
+}
+
+.app-actions-info-btn-white-mobile {
+  height: 44px;
+  min-width: 130px;
+  font-size: 12px;
+  text-align: end;
+  border-radius: 4px;
+  border: solid 1px @charcoal-3;
+  padding: 0.25rem 0.5rem;
+  color: @charcoal-8 !important;
+  background-color: #ffff !important;
+}
+
+.app-actions-modal-mobile {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  .ant-modal-content {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .ant-modal-body {
+    padding: 1.3rem 1rem;
+    height: 92%;
+    overflow-y: scroll;
+  }
+  .ant-modal-close {
+    left: 0;
+  }
+  .ant-modal-header {
+    padding-left: 56px;
+    border-bottom: 1px solid @charcoal-3;
+  }
+  .ant-modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: @charcoal-10;
+  }
+}
+
+.app-actions-rejection-reasons-mobile {
+  max-width: 600px;
+  margin: 0 auto;
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .checkbox {
+    padding: 0.9rem 0;
+    .ant-checkbox-wrapper span:last-child {
+      padding-left: 1rem;
+      color: @charcoal-8;
+      font-size: 14px;
+    }
+  }
+}
+
+.app-actions-sfi-text-mobile {
+  color: @charcoal-8;
+  font-size: 12px;
+  span {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.feedback-modal-content-mobile {
+  .ant-form-item-label {
+    color: @charcoal-10;
+    label {
+      font-size: 12px;
+    }
+  }
+  .ant-form-item-explain {
+    color: @red-8;
+    font-size: 12px;
+  }
+  .ant-form-item-has-error {
+    color: @red-8;
+    .ant-input-prefix {
+      color: @charcoal-8;
+    }
+    .ant-input-affix-wrapper {
+      border-color: @red-8;
+      box-shadow: none;
+    }
+    .ant-input {
+      background-color: @charcoal-2;
+      border-color: @red-8;
+    }
+    .ant-input-affix-wrapper:not([disabled]):hover {
+      border-color: @red-8;
+      box-shadow: none;
+    }
+    .ant-input:not([disabled]):hover {
+      border-color: @red-8;
+      box-shadow: none;
+    }
+  }
+}
+.feedback-modal-candidate-details-mobile {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.app-actions-feedback-input-mobile {
+  border: none;
+  background-color: @charcoal-2;
+  border-bottom: solid 2px @charcoal-7;
+  box-shadow: none;
+  padding: 0;
+  height: 48px;
+  & input {
+    background-color: @charcoal-2;
+    border: none !important;
+    padding-left: 1rem !important;
+  }
+  .ant-input-prefix {
+    width: 48px;
+    justify-content: center;
+    background-color: @charcoal-3;
+    margin: 0;
+  }
+}
+.app-actions-feedback-datepicker-mobile {
+  .ant-picker {
+    width: 100%;
+    background-color: @charcoal-2;
+    border: none;
+    height: 48px;
+    border-bottom: solid 2px @charcoal-7;
+    box-shadow: none;
+    padding-left: 1rem;
+  }
+  @media (max-width: 400px) {
+    .ant-picker-dropdown {
+      height: 230px;
+    }
+  }
+}
+.width-height-48 {
+  height: 48px;
+  width: 48px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.feedback-modal-footer-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  .green-primary-btn {
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+  }
+  .green-link-btn {
+    font-weight: bold;
+    font-size: 14px;
+    color: @charcoal-10;
+    width: 100%;
+  }
+}
+.feedback-modal-candidate-name-mobile {
+  color: @charcoal-10;
+  font-weight: bold;
+  font-size: 20px;
+}
+.custom-notification-mobile {
+  border-radius: 4px;
+  min-height: 56px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  bottom: 20px;
+  right: 5px;
+  .ant-notification-notice-with-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .ant-notification-notice-icon {
+    position: static;
+  }
+  .ant-notification-notice-message {
+    display: none;
+  }
+  .ant-notification-notice-description {
+    margin: 0.5rem;
+    font-size: 12px;
+    color: #ffffff;
+  }
+  .ant-notification-notice-close {
+    display: none;
+  }
+}
+.success-notification-mobile {
+  background-color: @charcoal-10;
+}
+.error-notification-mobile {
+  background-color: @red-9;
+}
+.feedback-modal-loading-state-mobile {
+  position: fixed;
+  top: 350px;
+  left: 45%;
+}
+
+@media (max-width: 576px) {
+  .ant-notification {
+    width: calc(100vw - 16px);
+    left: 51%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,96 @@
+.verifyNumberModal {
+  & .ant-modal-content {
+    border-radius: 4px;
+    & .ant-modal-body {
+      padding: 0;
+      height: 100%;
+      & .modal-info {
+        background-color: #13101d;
+        padding: 2.5rem 4rem 2rem 4rem;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+      & .modal-info-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0 0 1.5rem;
+      }
+      & .form-wrapper {
+        background-color: #f7f7f7;
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
+        & .whatsapp-toggle-switch {
+          &.ant-switch-checked {
+            background-color: #7353dd;
+          }
+        }
+        & .submit-btn {
+          background-color: #281666;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 4px;
+        }
+        label {
+          color: #150e1f;
+        }
+        & .verify-info {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      @media screen and (min-width: @screen-sm-min) {
+        & .modal-info-mobile {
+          display: none;
+        }
+        & .form-wrapper {
+          padding: 3.5rem 2.5rem;
+        }
+      }
+      & .text-white {
+        color: #ffffff;
+      }
+      & .text-drak-purple {
+        color: #150e1f;
+      }
+      & .text-light-grey {
+        color: #757575;
+      }
+      & .text-light-white {
+        color: #f0f0f0;
+      }
+      & .p-bottom-32 {
+        padding-bottom: 2rem;
+      }
+      & .p-bottom-24 {
+        padding-bottom: 1.5rem;
+      }
+      & .p-right-16 {
+        padding-right: 16px;
+      }
+      & .p-y-axis-12 {
+        padding: 12px 0px;
+      }
+      & .display-block {
+        display: block;
+      }
+    }
+    & .ant-modal-body,
+    .modal-container {
+      height: 100%;
+    }
+  }
+  & .ant-modal-header {
+    background-color: #f4f5f7;
+    display: flex;
+    justify-content: center;
+  }
+  & .ant-form-item {
+    margin-bottom: 0px;
+  }
+  & .align-text-center {
+    display: block;
+    text-align: center;
+  }
+}

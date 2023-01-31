@@ -1,0 +1,180 @@
+.m-at-filter-container {
+  // position: fixed;
+  // left: 0;
+  // right: 0;
+  z-index: 99;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+  & .job-title {
+    font-size: 9px;
+    color: #596685;
+  }
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  // z-index: 100; /* this is optional and should be different for every project */
+}
+.sticky-wrapper {
+  position: relative;
+  height: 3rem; /* We need to change this value */
+}
+
+.sticky .sticky-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.m-at-filters-modal {
+  background-color: #fff;
+  & .ant-modal-close {
+    left: 0;
+    right: auto;
+  }
+  & .ant-modal-header {
+    padding-left: 55px;
+    & .ant-modal-title {
+      font-size: 20px;
+      font-weight: 600;
+
+      & .m-clear-all {
+        font-size: 14px;
+        color: @blue-8;
+        font-weight: bold;
+      }
+    }
+  }
+  & .ant-modal-body {
+    max-height: 85vh;
+    overflow: auto;
+  }
+  & .ant-modal-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    & .m-at-filter-submit {
+      width: 100%;
+      border-radius: 0;
+      font-weight: 600;
+      height: 56px;
+    }
+  }
+}
+
+.m-at-filter-jobs {
+  width: 100%;
+
+  & .ant-select-selection-item {
+    color: @charcoal-10 !important;
+  }
+
+  & .ant-select-dropdown {
+    background-color: @blue-grey-1 !important;
+    & .ant-select-item {
+      height: 40px;
+      align-items: center;
+      font-size: 14px;
+      color: @blue-grey-4;
+    }
+    & .ant-select-selector {
+      border: none !important;
+      border-color: 2px solid @charcoal-7;
+    }
+    & .ant-select-item-group {
+      font-size: 12px;
+      color: @charcoal-6;
+      font-weight: bold;
+      padding-top: 16px;
+      padding-bottom: 8px;
+      border-top: 1px solid @charcoal-3;
+    }
+    & .ant-select-item-option-grouped {
+      padding-left: 16px;
+    }
+    & .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+      background-color: @blue-grey-2 !important;
+    }
+  }
+}
+
+.m-at-searchbar {
+  width: 90%;
+  border: none;
+  .ant-select-selection-search-input {
+    border: none;
+    width: 85%;
+  }
+  .ant-select-selection-search-input:focus {
+    box-shadow: none;
+  }
+  & .ant-select-selector {
+    border: none !important;
+  }
+}
+.m-at-searchbar:focus {
+  box-shadow: none;
+}
+.recent-list {
+  width: 100% !important;
+  left: 0 !important;
+  top: 58px !important;
+  background-color: @charcoal-1 !important;
+}
+
+.recent-list-title {
+  color: @charcoal-8;
+  font-weight: normal;
+  font-size: 12px;
+}
+.recent-list-value {
+  padding-left: 6px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  .value {
+    padding-left: 22px;
+  }
+}
+
+.filter-visible{
+  display: block;
+}
+
+.filter-hidden{
+  display: none;
+}
+
+.m-at-search-modal {
+  & .ant-modal-body {
+    padding: 0 !important;
+    max-height: 90vh !important;
+    overflow: auto;
+  }
+}
+.m-applied-filters {
+  height: 40px;
+  width: 40px;
+  background-color: @blue-grey-1;
+  border: none;
+}
+.m-at-filter-badge {
+  .ant-badge-dot {
+    height: 10px !important;
+    width: 10px !important;
+    color: @red-6 !important;
+  }
+}
+
+.count {
+  font-size: 16px;
+  color: @charcoal-4;
+  font-weight: normal;
+  padding-left: 4px;
+}

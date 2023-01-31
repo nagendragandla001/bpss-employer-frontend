@@ -1,0 +1,53 @@
+@import "~rfs/less";
+
+.clients-slider {
+  .margin-top(60px);
+  .margin-bottom(60px);
+
+  & .slick-slider,
+  & .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .slick-slide {
+    text-align: center;
+    background: none !important;
+    overflow: hidden;
+
+    & .slick-slider {
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    & .slick-dots .slick-dots-bottom {
+      color: black !important;
+    }
+
+    & .client-img {
+      display: flex !important;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+  & .client-size {
+    max-width: 115px;
+  }
+
+  & .leftarrow,
+  & .rightarrow {
+    color: #dadada;
+    cursor: pointer;
+    font-size: 40px;
+  }
+
+  & .leftarrow {
+    float: left;
+  }
+
+  & .rightarrow {
+    float: right;
+  }
+}

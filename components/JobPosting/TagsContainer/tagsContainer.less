@@ -1,0 +1,144 @@
+.job-tags-container {
+  & .ant-tag {
+    padding: 6px 12px;
+    margin: 6px;
+    border-radius: 16px;
+    font-size: 14px;
+    &.ant-tag-default {
+      background-color: #ffffff;
+      color: #6f737f;
+      border: 1px solid #d0d2d6;
+      & .close-tag-icon {
+        font-size: 14px;
+        color: #6f737f;
+      }
+    }
+  }
+
+  & .tag-selections {
+    border: none;
+  }
+}
+.tags-card-container {
+  border: 0.2px solid #c8c8c8;
+  border-bottom: 2px solid rgba(198, 198, 198, 0.5);
+  border-radius: 4px;
+
+  & .ant-card-head {
+    background: rgba(30, 108, 141, 0.1);
+
+    & .ant-card-head-title {
+      padding: 12px 0;
+
+      & .tags-card-title {
+        color: #1e6c8d;
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  & .ant-card-body {
+    padding: 0px;
+
+    & .suggested-tags {
+      padding: 0px 12px 12px;
+    }
+  }
+}
+
+.assessment-container {
+  &.ant-space {
+    width: 100%;
+  }
+
+  & .assessment-heading {
+    color: #656565;
+  }
+
+  & .assessment-footer {
+    color: #696f7c;
+
+    & .ant-btn {
+      font-size: 14px;
+      text-decoration: underline;
+      font-weight: bold;
+      padding: 0px;
+    }
+  }
+  & .ant-tag {
+    height: 120px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+
+    &.ant-tag-checkable {
+      background-color: #fff;
+      border-color: #dedede;
+    }
+    &.ant-tag-checkable-checked {
+      background-color: #f4f4fa;
+      color: @blue-8;
+      border: 1px solid #d1d5e9;
+    }
+    & .ant-row {
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      & .ant-col {
+        margin: 0px;
+        padding: 0px;
+
+        & .ant-space {
+          width: 100%;
+
+          & .ant-space-item {
+            max-width: 100%;
+
+            & .assessment-title {
+              color: #050f24;
+              white-space: normal;
+              text-align: start;
+            }
+            & .assessment-desc {
+              color: #b4b7bd;
+              white-space: normal;
+              text-align: start;
+            }
+            & .assessment-skills {
+              color: #696f7c;
+              white-space: normal;
+              text-align: start;
+              // width: 100% !important;
+              // max-width: 100%;
+              // word-wrap: break-word;
+            }
+          }
+        }
+      }
+    }
+
+    & .ant-divider {
+      height: 120px;
+    }
+
+    & .ant-tag {
+      border-radius: 20px;
+      height: fit-content;
+      width: fit-content;
+      background-color: #fff;
+
+      & .ant-typography {
+        font-size: smaller;
+      }
+    }
+
+    @media screen and (max-width: @screen-sm-max){
+        width: 120%;
+        height: 200px;
+    }
+  }
+}

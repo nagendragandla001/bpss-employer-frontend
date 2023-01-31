@@ -1,0 +1,481 @@
+@import "~rfs/less";
+
+.at-desktop-container {
+  margin-top: 24px;
+  width: 100%;
+}
+.application-tablist {
+  & .ant-tabs-nav-wrap {
+    height: 48px;
+    border-radius: 4px;
+    background-color: #fafbfb;
+    border: solid 1px #d8dfe0;
+    & .ant-tabs-nav-list {
+      width: 100%;
+    }
+  }
+  & .ant-tabs-tab {
+    width: 100%;
+    color: #596685;
+    justify-content: center;
+    margin: 0px !important;
+    &.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #001443;
+    }
+  }
+  & .ant-tabs-ink-bar {
+    background-color: #fe8a34;
+  }
+}
+.application-add-btn {
+  color: #1b2d93;
+}
+
+.download-helper-text{
+  border: 1px solid #e87d15;
+  background-color: #fff4ec;
+  border-radius: 4px;
+  .padding-top(16px);
+  .padding-left(25px);
+  .padding-right(25px);
+  .padding-bottom(14px);
+  .margin-bottom(10px);
+  // .margin-top(10px);
+}
+
+.at-desktop-drawer-filter {
+  border-radius: 4px;
+  background-color: #fafbfb;
+}
+
+.at-disable-download-excel-btn {
+  padding: 0;
+  border: 0;
+  opacity: 0.48;
+  display: flex;
+  align-items: center;
+}
+
+.at-download-excel-btn {
+  padding: 0;
+  margin-left: 8px;
+  border: 0;
+  opacity: 1.48;
+  display: flex;
+}
+
+.at-desktop-pagination {
+  & .ant-pagination-item {
+    display: none;
+  }
+  & .ant-pagination.mini .ant-pagination-total-text {
+    font-size: 12px;
+  }
+  & .ant-pagination-item-container {
+    display: none;
+  }
+  & .ant-pagination.mini .ant-pagination-jump-next {
+    min-width: auto;
+  }
+  .ant-pagination-total-text {
+    color: @blue-grey-5;
+    opacity: 0.48;
+  }
+}
+
+.at-desktop-spinner {
+  .ant-spin-dot-item {
+    background-color: @blue-8;
+  }
+  .ant-spin-spinning {
+    position: static;
+    display: block;
+    margin: 14em;
+    margin-left: 20em;
+    opacity: 1;
+  }
+}
+.at-desktop-select-all {
+  text-decoration: underline;
+  margin-right: 2px;
+  font-size: 12px;
+  display: flex !important;
+}
+
+.at-desktop-search {
+  background-color: @charcoal-1;
+  // width: 260px;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 4px;
+  box-shadow: none;
+  .ant-input-prefix {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .ant-input {
+    background-color: @charcoal-1;
+  }
+  .ant-input:placeholder-shown {
+    font-size: 12px;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.dt-desktop-search {
+  background-color: @charcoal-1;
+  width: 260px;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 4px;
+  box-shadow: none;
+  .ant-input-prefix {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .ant-input {
+    background-color: @charcoal-1;
+  }
+  .ant-input:placeholder-shown {
+    font-size: 12px;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.at-desktop-search-outline {
+  margin-right: 9px;
+  height: 17px;
+  width: 100%;
+}
+
+.at-search-icon {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.at-desktop-search-suffix {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  height: 17px;
+}
+
+.at-desktop-bulk-checkbox {
+  & .ant-checkbox-checked {
+    & .ant-checkbox-inner {
+      background-color: @blue-5;
+      border-color: @blue-5 !important;
+    }
+  }
+
+  .ant-checkbox-indeterminate .ant-checkbox-inner {
+    border-color: @blue-5;
+  }
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 8px;
+    background-color: @blue-5;
+    border: 0px;
+    color: white;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    content: "-";
+    text-align: center;
+  }
+}
+
+.at-desktop-applications-container {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: @charcoal-10;
+}
+
+.ct-desktop-bulk-actions-container-wrapper{
+  & .ant-row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  & .ant-col:first-child {
+    padding-left: 0 !important;
+  }
+  & .ant-col:last-child {
+    padding-right: 0 !important;
+  }
+}
+.at-desktop-bulk-actions-container {
+  margin-bottom: 16px;
+  padding: 2px;
+}
+
+.dt-desktop-bulk-actions-container {
+  margin-top: 16px;
+  padding: 8px;
+}
+
+.select-all-text{
+  color:@primary-color;
+  text-decoration: underline;
+}
+
+.at-desktop-application-card {
+  .ac-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    border: solid 1px @charcoal-2;
+    & .ant-checkbox-checked {
+      & .ant-checkbox-inner {
+        background-color: @blue-5 !important;
+        border: none !important;
+      }
+    }
+
+    & .m-right-8 {
+      margin-right: 8px;
+    }
+
+    & .ant-card-body {
+      padding: 1rem 1.2rem;
+      height: 100%;
+      border: none;
+    }
+
+    & .ac-interactive-buttons {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      & .ac-button {
+        border-radius: 4px;
+        border: solid 1px @blue-grey-4;
+        margin-right: 1rem;
+        color: @primary-color;
+        height: 32px;
+        padding: 4px 15px;
+        font-weight: bold;
+      }
+      & .ac-button-blue {
+        background-color: @primary-color;
+        color: #ffffff;
+        height: 32px;
+        padding: 4px 15px;
+        margin-right: 0rem;
+      }
+      & .ac-dropdown-button {
+        & .ant-btn {
+          font-weight: bold;
+          color: @charcoal-10;
+          border: solid 1px @charcoal-8;
+          height: 32px;
+          padding: 4px 15px;
+        }
+        & .ant-btn:first-child {
+          border-right: 1px solid @charcoal-8;
+          border-radius: 4px 0px 0px 4px !important;
+        }
+        & .ant-btn:last-child {
+          border-radius: 0px 4px 4px 0px !important;
+          width: 2.5rem;
+        }
+        & .ant-dropdown {
+          min-width: 130px !important;
+        }
+      }
+      & .ac-dropdown-button-blue {
+        & .ant-btn {
+          border: none;
+          background-color: @primary-color;
+          color: #ffffff;
+          margin-right: 0rem;
+        }
+        & .ant-btn:first-child {
+          border-right: 2px solid @blue-grey-3;
+        }
+        & .ant-btn:last-child {
+          margin-right: 0px;
+        }
+        & .ant-dropdown {
+          min-width: 130px !important;
+        }
+      }
+      & .ac-dropdown-info-button {
+        & .ant-btn {
+          font-weight: normal;
+          font-size: 10px;
+          color: @text-color;
+          border: solid 1px @charcoal-3;
+          height: 40px;
+          width:auto
+          //width: 165px;
+        }
+        & .ant-btn:first-child {
+          padding: 2px 0.5rem 0.25rem 0.5rem;
+          text-align: end;
+          border-right: 1px solid @charcoal-3;
+          border-radius: 4px 0px 0px 4px !important;
+        }
+        & .ant-btn:first-child:hover {
+          cursor: auto;
+        }
+        & .ant-btn:last-child {
+          background-color: @charcoal-1;
+          border-radius: 0px 4px 4px 0px !important;
+          width: 2.5rem;
+        }
+        & .ant-dropdown {
+          min-width: 140px !important;
+        }
+      }
+      & .ac-dropdown-info-button-grey {
+        & .ant-btn:first-child {
+          background-color: @charcoal-1;
+          color: @blue-grey-7;
+        }
+      }
+    }
+  }
+  & .ac-checked {
+    border: 2px solid @blue-5;
+    border-radius: 4px;
+  }
+
+  & .ant-ribbon-wrapper {
+    & .ac-container {
+      & .ant-card-body {
+        padding-top: 2em;
+      }
+    }
+  }
+}
+
+.ac-pagination {
+  margin: 0.7rem;
+  & .ant-pagination-item-active {
+    background-color: @primary-color;
+    border: none;
+    opacity: 0.48;
+    & a {
+      color: white;
+    }
+  }
+  & .ant-pagination-prev,
+  .ant-pagination-next {
+    opacity: 0.23;
+  }
+  & ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+
+.space {
+  flex: 1 1 auto;
+}
+
+.forward-resume .ant-btn,
+.forward-resume.ant-btn {
+  background-color: #f6f6f7;
+  border-radius: 5px;
+  border: none;
+  max-height: 32px;
+  padding: 0 14px 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .text {
+    .padding-left(6px);
+  }
+}
+
+.application-account-progress-container {
+  height: 1rem;
+  .ant-col {
+    height: 1rem;
+  }
+  & .progress-bar {
+    height: 4px;
+    padding-top: 0.75rem;
+    & .ant-progress-outer {
+      display: flex;
+    }
+    & .ant-progress-bg {
+      height: 5px !important;
+      background-color: @red-4;
+    }
+    &.progress-bg-yellow {
+      & .ant-progress-bg {
+        background-color: #e87d15;
+      }
+    }
+  }
+}
+.application-account-progress-container {
+  height: 1rem;
+  .ant-col {
+    height: 1rem;
+  }
+  & .progress-bar {
+    height: 4px;
+    padding-top: 0.75rem;
+    width: 250px;
+    & .ant-progress-outer {
+      display: flex;
+    }
+    & .ant-progress-bg {
+      height: 5px !important;
+      background-color: @red-4;
+    }
+    &.progress-bg-yellow {
+      & .ant-progress-bg {
+        background-color: #e87d15;
+      }
+    }
+  }
+}
+
+.application-account {
+  & .ant-card-head-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+.application-add-btn {
+  color: #1b2d93;
+}
+
+.at-summary {
+  margin-top: 0 !important;
+  & .stat {
+    padding: 0 !important;
+  }
+  & .ant-card-head-title {
+    font-weight: bold;
+    padding: 11px 0 !important;
+  }
+  .ant-card-body {
+    padding: 16px !important;
+  }
+  & .ant-card-head {
+    padding: 0 16px !important;
+    background-color: #fafbfb;
+  }
+}
+
+.margin-excel {
+  margin-right: 8px;
+}

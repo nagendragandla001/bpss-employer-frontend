@@ -1,0 +1,251 @@
+@import "~rfs/less";
+
+.myplan-modal-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.myplan-drawer-container,
+.settings-drawer {
+  .ant-drawer-body {
+    overflow-y: scroll;
+    background: #f7f7f7;
+  }
+  .ant-drawer-close {
+    padding: 1rem 1.2rem;
+    // left: 0;
+  }
+  .ant-drawer-header {
+    padding: 0.9rem 1rem 0.9rem 2.4rem;
+    height: 56px;
+    border-bottom: 1px solid @charcoal-3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .ant-drawer-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: @charcoal-10;
+  }
+  .passbook-drawer {
+    .plans {
+      button {
+        border-radius: 4px;
+        &.ant-btn-primary {
+          color: @charcoal-12 !important;
+          font-weight: bold;
+          border-color: #e87d15 !important;
+        }
+      }
+    }
+
+    & .m-my-plans-collapse {
+      & .ant-collapse-content {
+        border: none;
+        background-color: #fff;
+      }
+      & .ant-collapse-content-box {
+        padding: 0;
+      }
+
+      & .ant-collapse-item {
+        margin-bottom: 24px;
+        border: 1px solid #f2f4f5;
+        border-radius: 4px;
+
+        & .plan-type {
+          .font-size(10px);
+          line-height: 20px;
+        }
+
+        & .plan-name {
+          .font-size(20px);
+          line-height: 40px;
+          text-transform: capitalize;
+        }
+
+        & .plan-expiry {
+          font-size: 10px;
+          .margin-bottom(8px);
+        }
+
+        & .plan-details {
+          padding: 26px 12px;
+          &:not(:last-child) {
+            border-bottom: 2px solid #f2f4f5;
+          }
+        }
+
+        & .plan-remaining-credits {
+          font-size: 20px;
+          line-height: 28px;
+        }
+
+        & .plan-total-credits {
+          font-size: 12px;
+          line-height: 28px;
+        }
+
+        & .plan-progress {
+          & .ant-progress-inner {
+            border-radius: 0;
+            & .ant-progress-bg {
+              max-height: 4px;
+              border-radius: 0;
+            }
+          }
+        }
+
+        & .ant-collapse-header {
+          background: @blue-grey-12;
+          color: #b0b0b0;
+          min-height: 79px;
+          padding: 10px;
+          border-radius: 4px;
+
+          & .ant-collapse-arrow {
+            top: 35%;
+            left: 35%;
+            font-size: 16px;
+            color: #fff;
+          }
+
+          & .upgrade-plan {
+            background-color: #e87d15;
+            border-color: #e87d15;
+            border-radius: 4px;
+            font-weight: 500;
+            color: #fff;
+          }
+        }
+
+        &.add-on {
+          & .ant-collapse-header {
+            background: @charcoal-2;
+            color: @blue-grey-7;
+            min-height: 79px !important;
+            padding: 10px !important;
+            border-radius: 4px;
+
+            & .ant-collapse-arrow {
+              top: 35%;
+              font-size: 16px;
+              color: @blue-grey-7;
+            }
+
+            & .upgrade-plan {
+              background-color: #e87d15;
+              border-color: #e87d15;
+              border-radius: 4px;
+              font-weight: 500;
+              color: #fff;
+            }
+          }
+        }
+
+        &.base-plan {
+          & .ant-collapse-header {
+            background: @blue-grey-12;
+            color: #b0b0b0;
+            min-height: 79px;
+            padding: 10px;
+            border-radius: 4px;
+
+            & .ant-collapse-arrow {
+              top: 35%;
+              font-size: 16px;
+              color: #fff;
+            }
+
+            & .upgrade-plan {
+              background-color: #e87d15;
+              border-radius: 4px;
+              font-weight: 500;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .passbook-details-container {
+      min-height: 110px;
+      padding: 1rem 1.5rem 1.5rem 1rem;
+      .passbook-details {
+        & .ant-col {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        .wallet-text {
+          font-size: 12px;
+          font-weight: bold;
+          color: @blue-grey-5;
+          text-align: right;
+        }
+        .wallet-balance {
+          font-size: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          img {
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+
+    .p-bottom-1rem {
+      padding-bottom: 1rem;
+    }
+
+    & .passbook {
+      border: 1px solid #d8dfe0;
+      border-radius: 4px;
+      & .txn-details {
+        padding: 1rem;
+        border-bottom: 1px solid @charcoal-2;
+        max-height: 124px;
+        & .txn-title {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        & .txn-ref {
+          font-size: 12px;
+          color: @blue-grey-6;
+        }
+        & .download-invoice {
+          font-size: 12px;
+          font-weight: bold;
+          padding: 0;
+          color: @blue-7;
+          height: 16px;
+        }
+        & .txn-amount {
+          font-size: 20px;
+          text-align: right;
+          .text-blue {
+            color: @blue-7;
+          }
+          .text-red {
+            color: @red-7;
+          }
+        }
+        & .txn-date {
+          font-size: 10px;
+          color: @charcoal-6;
+          margin: 16px 0;
+        }
+      }
+    }
+    & .flex-all-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & .empty-state {
+      font-weight: bold;
+      font-size: 14px;
+      padding: 3rem;
+    }
+  }
+}

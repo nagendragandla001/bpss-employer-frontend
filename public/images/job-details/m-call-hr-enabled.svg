@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280" height="200" viewBox="0 0 280 200">
+    <defs>
+        <path id="l4e0m52p2a" d="M0 0H280V200H0z"/>
+        <path id="z5odfaxjde" d="M0 0H280V40H0z"/>
+        <linearGradient id="ib6tpwip1f" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset=".101%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <rect id="xg7tb11gkc" width="210.219" height="156" x="0" y=".635" rx="10.511"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="6anxci20ub" fill="#fff">
+            <use xlink:href="#l4e0m52p2a"/>
+        </mask>
+        <g mask="url(#6anxci20ub)">
+            <g>
+                <path fill="#D8DFE0" d="M213.292 0C226.386 0 237 10.614 237 23.708V37h2.012c.546 0 .988.442.988.988v18.024c0 .546-.442.988-.988.988H237v8h2.012c.546 0 .988.442.988.988v24.024c0 .546-.442.988-.988.988H237v143.292C237 247.386 226.386 258 213.292 258H23.708C10.614 258 0 247.386 0 234.292V23.708C0 10.614 10.614 0 23.708 0h189.584z" transform="translate(20 -95)"/>
+                <g transform="translate(20 -95) translate(14.015 80.555)">
+                    <mask id="nrzzbirasd" fill="#fff">
+                        <use xlink:href="#xg7tb11gkc"/>
+                    </mask>
+                    <use fill="#FFF" xlink:href="#xg7tb11gkc"/>
+                    <g mask="url(#nrzzbirasd)">
+                        <g>
+                            <path fill="#FFF" d="M0 0H210.219V114.745H0z" transform="translate(0 -11.54)"/>
+                            <path fill="#F2F4F5" d="M42.044 89.343H120.87599999999999V103.358H42.044zM42.044 26.277H196.20499999999998V40.292H42.044zM42.044 47.299H196.20499999999998V61.314H42.044zM42.044 68.321H196.20499999999998V82.336H42.044z" transform="translate(0 -11.54)"/>
+                            <g>
+                                <path d="M0 0H21.022V21.022H0z" transform="translate(0 -11.54) translate(10.51 7.007)"/>
+                                <path d="M0 0L17.518 0 17.518 17.518 0 17.518z" transform="translate(0 -11.54) translate(10.51 7.007) translate(1.752 1.752)"/>
+                            </g>
+                            <path fill="#F2F4F5" d="M42.044 113.869H203.212V114.869H42.044z" transform="translate(0 -11.54)"/>
+                        </g>
+                    </g>
+                    <g transform="translate(0 121.599)">
+                        <path d="M0 0H210.219V35.036H0z"/>
+                        <rect width="91.714" height="28.029" x="108" fill="#002F34" rx="3.504"/>
+                        <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="10.511" font-weight="bold">
+                            <tspan x="140.801" y="16.857">Apply</tspan>
+                        </text>
+                        <rect width="90" height="27.172" x="10.714" y=".429" fill="#FFF" stroke="#284E52" stroke-width=".857" rx="3.504"/>
+                        <text fill="#002F34" font-family="Roboto-Bold, Roboto" font-size="10.511" font-weight="bold">
+                            <tspan x="40.01" y="16.857">Call HR</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <use fill="url(#ib6tpwip1f)" xlink:href="#z5odfaxjde"/>
+    </g>
+</svg>

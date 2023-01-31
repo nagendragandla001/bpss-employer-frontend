@@ -1,0 +1,113 @@
+.viewCV-drawer {
+  .ant-drawer-title {
+    font-size: 14px;
+    color: @blue-grey-5;
+    font-weight: bold;
+    padding-left: 0px;
+  }
+}
+.viewCV-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+}
+.viewCV-modal {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  .ant-modal-content {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .ant-modal-body {
+    padding: 0px;
+    height: calc(100% - 56px);
+  }
+  .ant-modal-close {
+    left: 0;
+  }
+  .ant-modal-header {
+    padding-left: 56px;
+    border-bottom: 1px solid @charcoal-3;
+  }
+  .ant-modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: @charcoal-10;
+  }
+}
+
+.download-cv-button {
+  border-radius: 20px;
+  background-color: @charcoal-1;
+  font-weight: bold;
+  border: none;
+  height: 32px;
+  font-size: 12px;
+  padding: 4px 15px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+.download-cv-button:hover {
+  background-color: rgba(0, 20, 67, 0.08);
+  color: @text-color;
+}
+
+.download-cv-icon {
+  position: fixed;
+  top: 85%;
+  right: 10%;
+  z-index: 1001;
+}
+
+.download-cv-icon-mobile {
+  height: 56px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid @charcoal-3;
+  .ant-btn {
+    border: none;
+    border-radius: 4px;
+    background-color: @charcoal-10;
+    color: #fff;
+    font-weight: bold;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+.ac-view-cv-button {
+  border-radius: 5px;
+  background-color: @charcoal-1;
+  border: none;
+  height: 32px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.ac-view-cv-button:hover {
+  background-color: rgba(0, 20, 67, 0.08);
+  color: @text-color;
+}
+.ac-view-cv-button:disabled,
+& .ac-view-cv-button[disabled]:hover {
+  background-color: @charcoal-1;
+  color: rgba(89, 102, 133, 0.48);
+  img {
+    opacity: 0.48;
+  }
+}

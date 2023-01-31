@@ -1,0 +1,32 @@
+.radio-experience {
+  padding: 0;
+  .ant-radio-group,
+  .ant-radio-group-large {
+    & .ant-radio-button-wrapper,
+    .ant-radio-button-wrapper:first-child,
+    .ant-radio-button-wrapper:last-child {
+      border-radius: 6px;
+      border: 1px solid @charcoal-3;
+      font-size: @font-size-base!important;
+      height: @height-base !important;
+      line-height: @height-base!important;
+      margin-right: 10px !important;
+      min-width: 80px !important;
+      text-align: center;
+      margin-bottom: @radio-wrapper-margin-bottom;
+      @media screen and (max-width: @screen-md-max) {
+        min-width: 60px !important;
+      }
+      &:before {
+        content: none !important;
+      }
+      &.ant-radio-button-wrapper-checked {
+        border: 1px solid @blue-7;
+        box-shadow: none;
+        color: @blue-8;
+        background: @btn-active-bg-color;
+        font-weight: 600;
+      }
+    }
+  }
+}

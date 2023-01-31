@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="238" height="104" viewBox="0 0 238 104">
+    <defs>
+        <rect id="157j6jogmc" width="210.219" height="90" x="0" y=".635" rx="10.511"/>
+        <path id="u0l960xtxa" d="M213.665 52.212c13.093 0 23.707 10.614 23.707 23.707v75.585c0 13.093-10.614 23.708-23.707 23.708H23.708C10.614 175.212 0 164.597 0 151.504V75.92c0-13.093 10.614-23.707 23.708-23.707h189.957zm25.347-29.41c.546 0 .988.443.988.989v18.17c0 .546-.442.988-.988.988h-1.528c-.545 0-.988-.442-.988-.988v-18.17c0-.546.443-.988.988-.988h1.528zm0-21.897c.546 0 .988.442.988.988v13.79c0 .546-.442.989-.988.989h-1.528c-.545 0-.988-.443-.988-.988V1.893c0-.546.443-.988.988-.988h1.528z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g transform="translate(-350 -322) translate(192 242) translate(130 80) translate(8) translate(20 -72)">
+                                <mask id="e568wo72qb" fill="#fff">
+                                    <use xlink:href="#u0l960xtxa"/>
+                                </mask>
+                                <use fill="#E0E0E0" xlink:href="#u0l960xtxa"/>
+                                <path fill="#D8D8D8" stroke="#979797" d="M-0.5 71.5H238.5V184.5H-0.5z" mask="url(#e568wo72qb)"/>
+                            </g>
+                            <g>
+                                <g transform="translate(-350 -322) translate(192 242) translate(130 80) translate(8) translate(20 -72) translate(14.015 63.555)">
+                                    <mask id="nuepbb10rd" fill="#fff">
+                                        <use xlink:href="#157j6jogmc"/>
+                                    </mask>
+                                    <use fill="#FFF" xlink:href="#157j6jogmc"/>
+                                    <g mask="url(#nuepbb10rd)">
+                                        <g>
+                                            <path fill="#FFF" d="M0 78.745H210.219V107.745H0z" transform="translate(0 -70.54)"/>
+                                            <path fill="#F2F4F5" d="M42.044 82.343H120.87599999999999V96.358H42.044zM42.044 106.869H203.212V107.869H42.044z" transform="translate(0 -70.54)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g transform="translate(-350 -322) translate(192 242) translate(130 80) translate(8) translate(20 -72) translate(14.015 63.555) translate(0 55.599)">
+                                    <path d="M0 0H210.219V35.036H0z"/>
+                                    <rect width="91.714" height="28.029" x="108" fill="#001443" rx="3.504"/>
+                                    <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="10.511" font-weight="bold">
+                                        <tspan x="140.801" y="16.857">Apply</tspan>
+                                    </text>
+                                    <rect width="90" height="27.172" x="10.714" y=".429" fill="#FFF" stroke="#DFDFDF" stroke-width=".857" rx="3.504"/>
+                                    <text fill="#0038C0" font-family="Roboto-Bold, Roboto" font-size="10.511" font-weight="bold">
+                                        <tspan x="40.01" y="16.857">Call HR</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

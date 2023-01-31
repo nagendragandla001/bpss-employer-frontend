@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1445" height="392" viewBox="0 0 1445 392">
+    <defs>
+        <circle id="ni5mk0x3ua" cx="720" cy="175" r="472"/>
+        <circle id="5xec9gc85b" cx="720.5" cy="193.5" r="624.5"/>
+        <mask id="zx20j6jpfe" width="944" height="944" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#ni5mk0x3ua"/>
+        </mask>
+        <mask id="4hkymw4qhf" width="1249" height="1249" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#5xec9gc85b"/>
+        </mask>
+        <path id="1flfiv1l3c" d="M0 0L1445 0 1445 392 801.193 392 0 392z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(2 -3689) translate(-6 3689) translate(4)">
+                    <mask id="usq999ixzd" fill="#fff">
+                        <use xlink:href="#1flfiv1l3c"/>
+                    </mask>
+                    <g stroke="#979797" stroke-dasharray="5" stroke-width="2" mask="url(#usq999ixzd)">
+                        <use mask="url(#zx20j6jpfe)" xlink:href="#ni5mk0x3ua"/>
+                    </g>
+                    <g stroke="#979797" stroke-dasharray="5" stroke-width="2" mask="url(#usq999ixzd)">
+                        <use mask="url(#4hkymw4qhf)" xlink:href="#5xec9gc85b"/>
+                    </g>
+                    <circle cx="256.5" cy="90.5" r="17.5" fill="#1b2d93" mask="url(#usq999ixzd)"/>
+                    <circle cx="102.5" cy="287.5" r="17.5" fill="#F60" mask="url(#usq999ixzd)"/>
+                    <circle cx="1330.5" cy="47.5" r="14.5" fill="#1b2d93" mask="url(#usq999ixzd)"/>
+                    <circle cx="1177.5" cy="294.5" r="14.5" fill="#F60" mask="url(#usq999ixzd)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,255 @@
+@import "~rfs/less";
+@buy-credits-offices-carousel-height: 152px;
+
+.buy-credits-drawer {
+  & .ant-drawer-header {
+    padding: 1rem;
+    & .ant-drawer-title {
+      padding: 0;
+      font-size: 14px;
+      font-weight: bold;
+      color: @blue-grey-6;
+    }
+  }
+  & .ant-drawer-body {
+    padding: 1.5rem !important;
+    display: flex;
+    flex-direction: column;
+    & .ant-form-item {
+      margin-bottom: 2rem;
+    }
+    & .ant-form-item-label {
+      font-size: 14px;
+      font-weight: bold;
+      label {
+        color: @text-color;
+      }
+    }
+    & .ant-select-selector {
+      border-radius: 4px;
+    }
+    & .buy-credits-offices-carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & .slick-slider {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      & .slick-list {
+        height: @buy-credits-offices-carousel-height !important;
+        padding: 0 !important;
+      }
+      & .slick-track {
+        height: 100%;
+      }
+      & .silck-slide {
+        width: 207px !important;
+        height: @buy-credits-offices-carousel-height;
+        border: 1px solid #ccc;
+        &.slick-active {
+          border: none;
+        }
+      }
+      & .slick-dots {
+        display: none !important;
+      }
+      & .ant-btn-lg {
+        padding: 0;
+        height: 100%;
+      }
+      & .carousel-checkbox {
+        min-width: 240px !important;
+        max-width: 240px !important;
+        margin-right: 16px;
+        border-radius: 4px;
+        height: 144px;
+        display: flex;
+        &.ant-checkbox-wrapper {
+          border: 1px solid @charcoal-3;
+          & .ant-checkbox {
+            top: 16px;
+            left: 16px;
+          }
+          & .checkbox-content {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            height: 100%;
+            margin: 0;
+            max-width: 214px;
+            width: 214px;
+            padding: 12px 12px 16px 0;
+            & .interview-address {
+              max-height: 52px;
+              overflow: hidden;
+              word-break: break-word;
+            }
+            & .map-img {
+              height: 48px;
+              width: 48px;
+            }
+          }
+          & .ant-checkbox-inner {
+            border: 1px solid @charcoal-8;
+            width: 16px !important;
+            height: 16px !important;
+            border-radius: 8px;
+            &::after {
+              border-radius: 8px;
+              background: #fff;
+              width: 6px;
+              height: 6px;
+              top: 8px;
+              left: 4px;
+            }
+          }
+        }
+
+        &.ant-checkbox-wrapper-checked {
+          border: 1px solid @blue-7;
+          box-shadow: none;
+          & .ant-checkbox-inner {
+            border: 1px solid @blue-7;
+            background-color: @blue-7;
+            &::after {
+              border-radius: 8px;
+              background: #fff;
+              width: 6px;
+              height: 6px;
+              top: 8px;
+              left: 4px;
+            }
+          }
+        }
+        & .ant-checkbox-checked::after {
+          border: none !important;
+        }
+      }
+      & .carousel-arrows {
+        height: @buy-credits-offices-carousel-height !important;
+        background: none;
+        border: none;
+        background-image: linear-gradient(
+          to left,
+          #fff 49%,
+          rgba(255, 255, 255, 0)
+        );
+        border-radius: 0;
+        position: absolute;
+        box-shadow: none;
+        width: 45px;
+        right: 0;
+        span {
+          padding-bottom: 8px;
+        }
+        &:nth-child(1) {
+          left: 0;
+          display: none;
+        }
+      }
+    }
+  }
+  & .add-another-btn {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0.75rem;
+    height: auto;
+  }
+  & .submit-btn {
+    display: flex;
+    justify-content: center;
+    & .ant-btn {
+      height: 40px;
+      border-radius: 4px;
+      width: 50%;
+      padding: 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    margin-top: 1.5rem;
+  }
+  &.buy-credits-drawer-mobile {
+    .ant-drawer-body {
+      padding: 1rem !important;
+    }
+    .ant-drawer-close {
+      padding: 1rem 1.2rem;
+      left: 0;
+    }
+    .ant-drawer-header {
+      padding: 0.9rem 1rem 0.9rem 4rem;
+      height: 56px;
+      border-bottom: 1px solid @charcoal-3;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .ant-drawer-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: @charcoal-10;
+    }
+    .ant-drawer-footer {
+      height: 56px;
+      background-color: @charcoal-10;
+      & .btn-grey {
+        height: 100%;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+  & .font-size-20 {
+    font-size: 20px;
+  }
+  & .p-bottom-32 {
+    padding-bottom: 2rem;
+  }
+  & .flex-align-center {
+    display: flex;
+    align-items: center;
+  }
+  & .flex-justify-end {
+    justify-content: flex-end;
+  }
+
+  & .plan-info {
+    border-radius: 4px;
+    border: 1px solid @blue-grey-2;
+    margin-bottom: 15px;
+    color: #f9f9fa;
+    & .title {
+      background: #12003e;
+      border-color: #12003e;
+      border-radius: 4px;
+      color: #ffffff;
+      padding: 10px 21px;
+      background-image: url("/images/my-plans/img-plans-background.png");
+      background-position: left center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    & .plan-details {
+      position: relative;
+      padding: 12px 21px;
+      & .offer-name {
+        color: @blue-grey-7;
+      }
+      & .plan-validity {
+        bottom: 12px;
+        position: absolute;
+        right: 12px;
+        font-size: 10px;
+        color: @blue-grey-7;
+      }
+    }
+  }
+}

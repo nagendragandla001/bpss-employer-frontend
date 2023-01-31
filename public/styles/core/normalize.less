@@ -1,0 +1,32 @@
+html,
+body,
+* {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-seri;
+}
+
+// Overriding AntD Styles
+
+// Find an alternate to do this via variables
+.ant-form-large .ant-form-item-label > label {
+  height: auto;
+}
+
+.ant-typography {
+  .margin(0) !important;
+}
+
+.ant-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-dropdown {
+  & .ant-select-arrow {
+    height: auto;
+    width: auto;
+    top: 35%;
+    right: 2%;
+  }
+}

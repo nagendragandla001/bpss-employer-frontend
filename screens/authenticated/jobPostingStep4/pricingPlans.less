@@ -1,0 +1,142 @@
+@import "~rfs/less";
+
+.d-pricing-plans {
+  // & > .ant-col {
+  //   display: flex;
+  // }
+  & .pricing-plan {
+    border-radius: 4px;
+    min-height: 428px;
+    border: solid 2px @charcoal-3;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+      border-color: @yellow-5;
+      border-width: 2px;
+    }
+    & .plan-name {
+      text-align: center;
+    }
+    & .unit-cost {
+      margin-top: 24px;
+      margin-bottom: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+    & .custom-plan {
+      font-size: 20px;
+      margin-top: 34px;
+      margin-bottom: 57px;
+    }
+    & .jp {
+      margin-bottom: 40px;
+      & .jp-limit {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      & .jp-name {
+        color: @blue-grey-7;
+        font-size: 20px;
+      }
+    }
+    & .offer {
+      .margin-bottom(5px);
+      & .tick {
+        height: 7px;
+        width: 7px;
+        margin-right: 8px;
+        text-align: center;
+      }
+    }
+    & .pricing-action {
+      text-align: center;
+      margin-top: 30px;
+
+      & .action-btn {
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+      }
+      & .validity {
+        color: @blue-grey-7;
+        font-size: 10px;
+      }
+    }
+    & .custom-plan-action {
+      left: 0;
+      bottom: 22px;
+      right: 0;
+    }
+  }
+}
+.section-loader {
+  text-align: center;
+  width: 100%;
+  & span {
+    font-size: 50px;
+  }
+}
+
+.m-pricing-plans {
+  & .pricing-plan {
+    border-radius: 4px;
+    height: 205px;
+    border: solid 1px @charcoal-3;
+    padding: 16px;
+    position: relative;
+    &:hover {
+      border-width: 2px;
+      border-color: @yellow-5;
+    }
+    & .plan-name {
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    & .unit-cost {
+      font-size: 20px;
+    }
+    & .custom-plan {
+      font-size: 20px;
+      margin-top: 34px;
+      margin-bottom: 57px;
+    }
+    & .jp {
+      margin-bottom: 16px;
+      & .jp-name {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    & .offer {
+      & .tick {
+        height: 7px;
+        width: 7px;
+        margin-right: 8px;
+        text-align: center;
+      }
+    }
+    & .pricing-action {
+      text-align: center;
+
+      & .action-btn {
+        height: 40px;
+        border-radius: 4px;
+      }
+      & .validity {
+        color: @blue-grey-4;
+        font-size: 14px;
+      }
+    }
+    & .custom-plan-action {
+      bottom: 24px;
+      right: 32px;
+      position: absolute;
+      & .action-btn {
+        height: 40px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

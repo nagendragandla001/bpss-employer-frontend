@@ -1,0 +1,41 @@
+@import "~rfs/less";
+
+.job-posting-guidelines {
+  padding-bottom: 60px;
+  & .second-level {
+    margin-top: 25px;
+  }
+  & .gl-mid-title {
+    .font-size(14px) !important;
+    .rfs(20px, line-height);
+  }
+  & .gl-note {
+    .font-size(14px);
+    font-weight: 700;
+  }
+  & .guidelines-list {
+    margin-top: 25px;
+    & li {
+      .font-size(12px);
+      color: @blue-grey-6;
+      margin-bottom: 8px;
+      &::marker {
+        color: @red-4;
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+  & .gl-final-note {
+    display: flex;
+    .font-size(12px);
+    .rfs(16px, line-height);
+    padding: 16px 18px;
+    background-color: @blue-grey-1;
+    color: @blue-grey-6;
+    border-radius: 4px;
+  }
+  & .gl-support {
+    .margin-top(40px);
+  }
+}
